@@ -77,7 +77,7 @@ export const ColorModeButton = React.forwardRef<
 export const ColorModeSwitch = React.forwardRef<
   HTMLButtonElement,
   ColorModeButtonProps
->(function ColorModeButton(props, ref) {
+>(function ColorModeButton() {
   const { toggleColorMode } = useColorMode()
   return (
     <ClientOnly fallback={<Skeleton boxSize="8" />}>

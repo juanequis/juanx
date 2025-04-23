@@ -1,9 +1,12 @@
+"use client"
+
 import styles from './nav.module.css';
 import Link from 'next/link';
 import { HiOutlineCog } from "react-icons/hi";
 import { Menu, Portal, IconButton, Flex, Drawer, CloseButton, Separator } from "@chakra-ui/react"
 import { ColorModeSwitch } from '@/components/ui/color-mode'
 import { RxHamburgerMenu } from "react-icons/rx";
+import { useTranslation } from 'react-i18next';
 
 const accordionItems = [
   { value: "a", title: "First Item", text: "Some value 1..." },
@@ -12,24 +15,26 @@ const accordionItems = [
 ]
 
 export function Nav() {
+  const { t } = useTranslation('common');
+
   return (
     <Flex className={styles.nav}>
       <Flex className={styles.navLinks} hideBelow="md">
         <Link
           href="/">
-          Home
+          {t('nav.home')}
         </Link>
         <Link
           href="/about">
-          About
+          {t('nav.about')}
         </Link>
         <Link
           href="/work">
-          Work
+          {t('nav.work')}
         </Link>
         <Link
           href="/contact">
-          Contact
+          {t('nav.contact')}
         </Link>
       </Flex>
       <Flex className={styles.navSettings} hideBelow="md">
