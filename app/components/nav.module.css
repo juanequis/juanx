@@ -1,0 +1,27 @@
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 10rem;
+    width: 100%;
+}
+
+:global(.light) .nav {
+    border-bottom: 1px solid #eaeaea;
+}
+
+:global(.dark) .nav {
+    border-bottom: 1px solid #353535;
+}
+
+.navLinks {
+    display: flex;
+    gap: 2rem;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        justify-content: flex-end;
+        padding: 1rem 4rem;
+    }
+}
