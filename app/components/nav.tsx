@@ -8,11 +8,11 @@ import { ColorModeSwitch } from '@/components/ui/color-mode'
 import { RxHamburgerMenu } from "react-icons/rx";
 import { useTranslation } from 'react-i18next';
 
-const accordionItems = [
-  { value: "a", title: "First Item", text: "Some value 1..." },
-  { value: "b", title: "Second Item", text: "Some value 2..." },
-  { value: "c", title: "Third Item", text: "Some value 3..." },
-]
+// const accordionItems = [
+//   { value: "a", title: "First Item", text: "Some value 1..." },
+//   { value: "b", title: "Second Item", text: "Some value 2..." },
+//   { value: "c", title: "Third Item", text: "Some value 3..." },
+// ]
 
 export function Nav() {
   const { t } = useTranslation('common');
