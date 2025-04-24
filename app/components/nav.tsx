@@ -15,7 +15,7 @@ import { useTranslation } from 'react-i18next';
 // ]
 
 export function Nav() {
-  const { t } = useTranslation('common');
+  const { t } = useTranslation('translation');
 
   return (
     <Flex className={styles.nav}>
