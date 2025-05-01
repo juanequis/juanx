@@ -32,17 +32,17 @@ const LanguageSelect = () => {
             <VStack gap="6" alignItems={"start"}>
               <RadioGroup.Item key="en" value="en">
                 <RadioGroup.ItemHiddenInput />
-                <RadioGroup.ItemIndicator />
+                <RadioGroup.ItemIndicator cursor="pointer" />
                 <RadioGroup.ItemText>{t('nav.language.en')}</RadioGroup.ItemText>
               </RadioGroup.Item>
               <RadioGroup.Item key="es" value="es">
                 <RadioGroup.ItemHiddenInput />
-                <RadioGroup.ItemIndicator />
+                <RadioGroup.ItemIndicator cursor="pointer" />
                 <RadioGroup.ItemText>{t('nav.language.es')}</RadioGroup.ItemText>
               </RadioGroup.Item>
               <RadioGroup.Item key="fr" value="fr">
                 <RadioGroup.ItemHiddenInput />
-                <RadioGroup.ItemIndicator />
+                <RadioGroup.ItemIndicator cursor="pointer" />
                 <RadioGroup.ItemText>{t('nav.language.fr')}</RadioGroup.ItemText>
               </RadioGroup.Item>
             </VStack>
@@ -145,9 +145,6 @@ export function Nav() {
             </Drawer.Positioner>
           </Portal>
         </Drawer.Root>
-        {/* <IconButton aria-label="Open menu" variant="ghost">
-          <RxHamburgerMenu />
-        </IconButton> */}
       </Flex>
     </Flex>
   )
