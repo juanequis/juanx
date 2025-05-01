@@ -3,16 +3,55 @@
 import styles from './nav.module.css';
 import Link from 'next/link';
 import { HiOutlineCog } from "react-icons/hi";
-import { Menu, Portal, IconButton, Flex, Drawer, CloseButton, Separator } from "@chakra-ui/react"
+import { Menu, Portal, IconButton, Flex, Drawer, CloseButton, Separator, Accordion, Span, RadioGroup, VStack } from "@chakra-ui/react"
 import { ColorModeSwitch } from '@/components/ui/color-mode'
 import { RxHamburgerMenu } from "react-icons/rx";
 import { useTranslation } from 'react-i18next';
 
-// const accordionItems = [
-//   { value: "a", title: "First Item", text: "Some value 1..." },
-//   { value: "b", title: "Second Item", text: "Some value 2..." },
-//   { value: "c", title: "Third Item", text: "Some value 3..." },
-// ]
+const LanguageSelect = () => {
+  const { t, i18n } = useTranslation('translation'); // Access i18n instance
+
+  const handleLanguageChange = (lang: string) => {
+    i18n.changeLanguage(lang); // Change the language
+  };
+
+  return (
+    <Accordion.Root collapsible size="sm" className={styles.langAccordion} variant="subtle">
+      <Accordion.Item value="language-select">
+        <Accordion.ItemTrigger cursor="pointer">
+          <Span flex="1">{t('nav.language')}</Span>
+          <Accordion.ItemIndicator />
+        </Accordion.ItemTrigger>
+        <Accordion.ItemContent>
+          <RadioGroup.Root
+            defaultValue={i18n.language} // Set the current language as the default value
+            orientation="vertical"
+            variant="subtle"
+            onValueChange={(details) => handleLanguageChange(details.value || i18n.language)} // Trigger language change
+          >
+            <VStack gap="6" alignItems={"start"}>
+              <RadioGroup.Item key="en" value="en">
+                <RadioGroup.ItemHiddenInput />
+                <RadioGroup.ItemIndicator cursor="pointer" />
+                <RadioGroup.ItemText>{t('nav.language.en')}</RadioGroup.ItemText>
+              </RadioGroup.Item>
+              <RadioGroup.Item key="es" value="es">
+                <RadioGroup.ItemHiddenInput />
+                <RadioGroup.ItemIndicator cursor="pointer" />
+                <RadioGroup.ItemText>{t('nav.language.es')}</RadioGroup.ItemText>
+              </RadioGroup.Item>
+              <RadioGroup.Item key="fr" value="fr">
+                <RadioGroup.ItemHiddenInput />
+                <RadioGroup.ItemIndicator cursor="pointer" />
+                <RadioGroup.ItemText>{t('nav.language.fr')}</RadioGroup.ItemText>
+              </RadioGroup.Item>
+            </VStack>
+          </RadioGroup.Root>
+        </Accordion.ItemContent>
+      </Accordion.Item>
+    </Accordion.Root>
+  );
+};
 
 export function Nav() {
   const { t } = useTranslation('translation');
@@ -49,28 +88,16 @@ export function Nav() {
           <Portal>
             <Menu.Positioner>
               <Menu.Content>
-                {/* <Menu.Item value="toggle-mode">Mode <ColorModeButton /></Menu.Item> */}
                 <Menu.Item value="toggle-mode">
-                  <ColorModeSwitch />
+                  <ColorModeSwitch label={t('nav.toggleColorMode')} />
                 </Menu.Item>
-                <Menu.Item value="language">Language</Menu.Item>
+                <Menu.Item value="language">
+                  <LanguageSelect />
+                </Menu.Item>
               </Menu.Content>
             </Menu.Positioner>
           </Portal>
         </Menu.Root>
-        {/* <Accordion.Root collapsible defaultValue={["b"]}>
-          {accordionItems.map((item, index) => (
-            <Accordion.Item key={index} value={item.value}>
-              <Accordion.ItemTrigger>
-                <Span flex="1">{item.title}</Span>
-                <Accordion.ItemIndicator />
-              </Accordion.ItemTrigger>
-              <Accordion.ItemContent>
-                <Accordion.ItemBody>{item.text}</Accordion.ItemBody>
-              </Accordion.ItemContent>
-            </Accordion.Item>
-          ))}
-        </Accordion.Root> */}
       </Flex>
       <Flex hideFrom="md">
         <Drawer.Root>
@@ -91,23 +118,23 @@ export function Nav() {
                   >
                     <Link
                       href="/">
-                      Home
+                      {t('nav.home')}
                     </Link>
                     <Link
                       href="/about">
-                      About
+                      {t('nav.about')}
                     </Link>
                     <Link
                       href="/work">
-                      Work
+                      {t('nav.work')}
                     </Link>
                     <Link
                       href="/contact">
-                      Contact
+                      {t('nav.contact')}
                     </Link>
                     <Separator />
-                    <ColorModeSwitch />
-                    <div>Language</div>
+                    <ColorModeSwitch label={t('nav.toggleColorMode')} />
+                    <LanguageSelect />
                   </Flex>
                 </Drawer.Body>
                 <Drawer.Footer />
@@ -118,9 +145,6 @@ export function Nav() {
             </Drawer.Positioner>
           </Portal>
         </Drawer.Root>
-        {/* <IconButton aria-label="Open menu" variant="ghost">
-          <RxHamburgerMenu />
-        </IconButton> */}
       </Flex>
     </Flex>
   )

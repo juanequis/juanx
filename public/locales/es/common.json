@@ -2,5 +2,10 @@
     "nav.home": "Inicio",
     "nav.about": "Acerca de",
     "nav.work": "Trabajo",
-    "nav.contact": "Contacto"
+    "nav.contact": "Contacto",
+    "nav.language": "Idioma",
+    "nav.language.en": "Inglés",
+    "nav.language.es": "Español",
+    "nav.language.fr": "Francés",
+    "nav.toggleColorMode": "Modo"
 }

@@ -19,6 +19,25 @@
     gap: 2rem;
 }
 
+.langAccordion :global(.chakra-accordion__itemTrigger) {
+    padding: 0;
+    /* margin-bottom: 5px; */
+
+    &:focus-visible {
+        outline: none;
+    }
+}
+
+.langAccordion :global(.chakra-accordion__item) {
+    padding: 5px 0;
+    background: none;
+}
+
+.langAccordion :global(.chakra-accordion__itemContent) {
+    margin-top: 15px;
+    padding: 0;
+}
+
 @media (max-width: 768px) {
     .nav {
         justify-content: flex-end;

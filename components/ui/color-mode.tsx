@@ -23,6 +23,10 @@ export interface UseColorModeReturn {
   toggleColorMode: () => void
 }
 
+export interface ColorModeSwitchProps {
+  label: string
+}
+
 export function useColorMode(): UseColorModeReturn {
   const { resolvedTheme, setTheme } = useTheme()
   const toggleColorMode = () => {
@@ -76,14 +80,15 @@ export const ColorModeButton = React.forwardRef<
 
 export const ColorModeSwitch = React.forwardRef<
   HTMLButtonElement,
-  ColorModeButtonProps
->(function ColorModeButton() {
+  ColorModeSwitchProps
+>(function ColorModeSwitch(props: ColorModeSwitchProps) {
+  const { label } = props;
   const { toggleColorMode } = useColorMode()
   return (
     <ClientOnly fallback={<Skeleton boxSize="8" />}>
       <Switch.Root size="lg" aria-label="Toggle color mode">
         <Switch.HiddenInput />
-        <Switch.Label>Mode</Switch.Label>
+        <Switch.Label>{label}</Switch.Label>
         <Switch.Control onClick={toggleColorMode} >
           <Switch.Thumb />
           <Switch.Indicator fallback={<Icon color="gray.400" ><LuMoon /></Icon>}>
