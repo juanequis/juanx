@@ -133,7 +133,7 @@ export function Nav() {
                       {t('nav.contact')}
                     </Link>
                     <Separator />
-                    <ColorModeSwitch />
+                    <ColorModeSwitch label={t('nav.toggleColorMode')} />
                     <LanguageSelect />
                   </Flex>
                 </Drawer.Body>
