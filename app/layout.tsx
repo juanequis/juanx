@@ -4,6 +4,9 @@ import "./globals.css";
 import { Provider as ChakraProvider } from '@/components/ui/provider';
 import { Nav } from "./components/nav";
 import { I18nProvider } from '@/lib/i18n/provider';
+// import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { locales } from '@/lib/i18n/settings'
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,13 +23,20 @@ export const metadata: Metadata = {
   description: "J†'s personal site",
 };
 
-export default function RootLayout({
+export async function generateStaticParams() {
+  return locales.map((locale) => ({ locale }));
+}
+
+export default async function RootLayout({
   children,
+  params: { locale },
 }: Readonly<{
   children: React.ReactNode;
+  params: { locale: string },
 }>) {
+
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <I18nProvider>
           <ChakraProvider>
