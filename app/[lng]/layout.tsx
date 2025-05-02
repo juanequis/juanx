@@ -4,6 +4,26 @@ import "./globals.css";
 import { Provider as ChakraProvider } from '@/components/ui/provider';
 import { Nav } from "@/app/[lng]/components/nav";
 import { I18nProvider } from '@/lib/i18n/provider';
+import { getT } from '@/lib/i18n/server';
+import { languages } from '@/lib/i18n/settings';
+
+// import { languages } from '../../i18n/settings'
+// import { getT } from '../../i18n'
+
+// export async function generateStaticParams() {
+//   return languages.map((lng) => ({ lng }))
+// }
+
+// export async function generateMetadata() {
+//   const { t } = await getT('second-page')
+//   return {
+//     title: t('title')
+//   }
+// }
+
+// export default async function Layout({ children }) {
+//   return children
+// }
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,7 +40,7 @@ export const metadata: Metadata = {
   description: "J†'s personal site",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
