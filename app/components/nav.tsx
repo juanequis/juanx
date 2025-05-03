@@ -7,26 +7,20 @@ import { HiOutlineCog } from "react-icons/hi";
 import { Menu, Portal, IconButton, Flex, Drawer, CloseButton, Separator, Accordion, Span, RadioGroup, VStack } from "@chakra-ui/react"
 import { ColorModeSwitch } from '@/components/ui/color-mode'
 import { RxHamburgerMenu } from "react-icons/rx";
-// import { useTranslation } from 'react-i18next';
 import { useTranslations, useLocale } from 'next-intl';
 import { setUserLocale } from '@/i18n/locale';
 import type { Locale } from '@/i18n/settings';
 
 const LanguageSelect = () => {
-  // const { t, i18n } = useTranslation('translation'); // Access i18n instance
-
   const t = useTranslations('nav');
 
   const locale = useLocale();
-
-  // const handleLanguageChange = (lang: string) => {
-  //   i18n.changeLanguage(lang); // Change the language
-  // };
 
   const [isPending, startTransition] = useTransition();
 
   const handleLanguageChange = (value: string) => {
     const locale = value as Locale;
+
     startTransition(() => {
       setUserLocale(locale);
     });
@@ -45,7 +39,6 @@ const LanguageSelect = () => {
             defaultValue={locale} // Set the current language as the default value
             orientation="vertical"
             variant="subtle"
-            // onValueChange={(details) => handleLanguageChange(details.value || i18n.language)} // Trigger language change
             onValueChange={(details) => handleLanguageChange(details.value || locale)} // Trigger language change
           >
             <VStack gap="6" alignItems={"start"}>
