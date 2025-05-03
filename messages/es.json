@@ -1,0 +1,14 @@
+{
+    "nav": {
+        "title": "My Portfolio",
+        "home": "Inicio",
+        "about": "Acerca de",
+        "work": "Trabajo",
+        "contact": "Contacto",
+        "language": "Idioma",
+        "languageEn": "Inglés",
+        "languageEs": "Español",
+        "languageFr": "Francés",
+        "toggleColorMode": "Modo"
+    }
+}
