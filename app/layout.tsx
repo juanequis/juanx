@@ -3,7 +3,9 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Provider as ChakraProvider } from '@/components/ui/provider';
 import { Nav } from "./components/nav";
-import { I18nProvider } from '@/lib/i18n/provider';
+// import { I18nProvider } from '@/lib/i18n/provider';
+import { NextIntlClientProvider } from 'next-intl';
+import { getLocale } from 'next-intl/server';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,20 +22,24 @@ export const metadata: Metadata = {
   description: "J†'s personal site",
 };
 
-export default function RootLayout({
+
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+  const locale = await getLocale();
+
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <I18nProvider>
+        <NextIntlClientProvider>
           <ChakraProvider>
             <Nav />
             {children}
           </ChakraProvider>
-        </I18nProvider>
+        </NextIntlClientProvider>
       </body>
     </html>
   );

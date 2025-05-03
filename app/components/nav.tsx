@@ -1,49 +1,68 @@
 "use client"
 
+import { useTransition } from 'react';
 import styles from './nav.module.css';
 import Link from 'next/link';
 import { HiOutlineCog } from "react-icons/hi";
 import { Menu, Portal, IconButton, Flex, Drawer, CloseButton, Separator, Accordion, Span, RadioGroup, VStack } from "@chakra-ui/react"
 import { ColorModeSwitch } from '@/components/ui/color-mode'
 import { RxHamburgerMenu } from "react-icons/rx";
-import { useTranslation } from 'react-i18next';
+// import { useTranslation } from 'react-i18next';
+import { useTranslations, useLocale } from 'next-intl';
+import { setUserLocale } from '@/i18n/locale';
+import type { Locale } from '@/i18n/settings';
 
 const LanguageSelect = () => {
-  const { t, i18n } = useTranslation('translation'); // Access i18n instance
+  // const { t, i18n } = useTranslation('translation'); // Access i18n instance
 
-  const handleLanguageChange = (lang: string) => {
-    i18n.changeLanguage(lang); // Change the language
-  };
+  const t = useTranslations('nav');
+
+  const locale = useLocale();
+
+  // const handleLanguageChange = (lang: string) => {
+  //   i18n.changeLanguage(lang); // Change the language
+  // };
+
+  const [isPending, startTransition] = useTransition();
+
+  const handleLanguageChange = (value: string) => {
+    const locale = value as Locale;
+    startTransition(() => {
+      setUserLocale(locale);
+    });
+  }
 
   return (
     <Accordion.Root collapsible size="sm" className={styles.langAccordion} variant="subtle">
       <Accordion.Item value="language-select">
         <Accordion.ItemTrigger cursor="pointer">
-          <Span flex="1">{t('nav.language')}</Span>
+          <Span flex="1">{t('language')}</Span>
           <Accordion.ItemIndicator />
         </Accordion.ItemTrigger>
         <Accordion.ItemContent>
           <RadioGroup.Root
-            defaultValue={i18n.language} // Set the current language as the default value
+            disabled={isPending}
+            defaultValue={locale} // Set the current language as the default value
             orientation="vertical"
             variant="subtle"
-            onValueChange={(details) => handleLanguageChange(details.value || i18n.language)} // Trigger language change
+            // onValueChange={(details) => handleLanguageChange(details.value || i18n.language)} // Trigger language change
+            onValueChange={(details) => handleLanguageChange(details.value || locale)} // Trigger language change
           >
             <VStack gap="6" alignItems={"start"}>
               <RadioGroup.Item key="en" value="en">
                 <RadioGroup.ItemHiddenInput />
                 <RadioGroup.ItemIndicator cursor="pointer" />
-                <RadioGroup.ItemText>{t('nav.language.en')}</RadioGroup.ItemText>
+                <RadioGroup.ItemText>{t('languageEn')}</RadioGroup.ItemText>
               </RadioGroup.Item>
               <RadioGroup.Item key="es" value="es">
                 <RadioGroup.ItemHiddenInput />
                 <RadioGroup.ItemIndicator cursor="pointer" />
-                <RadioGroup.ItemText>{t('nav.language.es')}</RadioGroup.ItemText>
+                <RadioGroup.ItemText>{t('languageEs')}</RadioGroup.ItemText>
               </RadioGroup.Item>
               <RadioGroup.Item key="fr" value="fr">
                 <RadioGroup.ItemHiddenInput />
                 <RadioGroup.ItemIndicator cursor="pointer" />
-                <RadioGroup.ItemText>{t('nav.language.fr')}</RadioGroup.ItemText>
+                <RadioGroup.ItemText>{t('languageFr')}</RadioGroup.ItemText>
               </RadioGroup.Item>
             </VStack>
           </RadioGroup.Root>
@@ -54,26 +73,26 @@ const LanguageSelect = () => {
 };
 
 export function Nav() {
-  const { t } = useTranslation('translation');
+  const t = useTranslations('nav');
 
   return (
     <Flex className={styles.nav}>
       <Flex className={styles.navLinks} hideBelow="md">
         <Link
           href="/">
-          {t('nav.home')}
+          {t('home')}
         </Link>
         <Link
           href="/about">
-          {t('nav.about')}
+          {t('about')}
         </Link>
         <Link
           href="/work">
-          {t('nav.work')}
+          {t('work')}
         </Link>
         <Link
           href="/contact">
-          {t('nav.contact')}
+          {t('contact')}
         </Link>
       </Flex>
       <Flex className={styles.navSettings} hideBelow="md">
@@ -89,7 +108,7 @@ export function Nav() {
             <Menu.Positioner>
               <Menu.Content>
                 <Menu.Item value="toggle-mode">
-                  <ColorModeSwitch label={t('nav.toggleColorMode')} />
+                  <ColorModeSwitch label={t('toggleColorMode')} />
                 </Menu.Item>
                 <Menu.Item value="language">
                   <LanguageSelect />
@@ -118,22 +137,22 @@ export function Nav() {
                   >
                     <Link
                       href="/">
-                      {t('nav.home')}
+                      {t('home')}
                     </Link>
                     <Link
                       href="/about">
-                      {t('nav.about')}
+                      {t('about')}
                     </Link>
                     <Link
                       href="/work">
-                      {t('nav.work')}
+                      {t('work')}
                     </Link>
                     <Link
                       href="/contact">
-                      {t('nav.contact')}
+                      {t('contact')}
                     </Link>
                     <Separator />
-                    <ColorModeSwitch label={t('nav.toggleColorMode')} />
+                    <ColorModeSwitch label={t('toggleColorMode')} />
                     <LanguageSelect />
                   </Flex>
                 </Drawer.Body>
