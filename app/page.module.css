@@ -6,11 +6,14 @@
   --button-primary-hover: #383838;
   --button-secondary-hover: #f2f2f2; */
 
+  /** for testing header:sticky */
+  /* height: 1000px; */
+
   display: grid;
   grid-template-rows: 20px 1fr 20px;
   align-items: center;
   justify-items: center;
-  min-height: 100svh;
+  min-height: 80svh;
   padding: 0 80px;
   gap: 64px;
   font-family: var(--font-geist-sans);
@@ -190,6 +193,7 @@ a.secondary {
   filter: invert(1);
 }
 
+/* This was not working. Solved it using the 2 rules above */
 /* @media (prefers-color-scheme: dark) {
   .logo {
     filter: invert();

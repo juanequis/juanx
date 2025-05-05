@@ -31,6 +31,8 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  height: 100%;
+  /* overflow: visible; */
 }
 
 body {
@@ -49,7 +51,11 @@ body {
 
 a {
   color: inherit;
-  text-decoration: none;
+  /* text-decoration: none; */
+
+  &:focus {
+    outline: none;
+  }
 }
 
 @media (prefers-color-scheme: dark) {

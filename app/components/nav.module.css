@@ -1,46 +1,50 @@
 .nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 10rem;
-    width: 100%;
+  position: sticky;
+  top: 0;
+  background: var(--background);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 10rem;
+  width: 100%;
+  z-index: 999;
 }
 
 :global(.light) .nav {
-    border-bottom: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
 }
 
 :global(.dark) .nav {
-    border-bottom: 1px solid #353535;
+  border-bottom: 1px solid #353535;
 }
 
 .navLinks {
-    display: flex;
-    gap: 2rem;
+  display: flex;
+  gap: 2rem;
 }
 
 .langAccordion :global(.chakra-accordion__itemTrigger) {
-    padding: 0;
-    /* margin-bottom: 5px; */
+  padding: 0;
+  /* margin-bottom: 5px; */
 
-    &:focus-visible {
-        outline: none;
-    }
+  &:focus-visible {
+    outline: none;
+  }
 }
 
 .langAccordion :global(.chakra-accordion__item) {
-    padding: 5px 0;
-    background: none;
+  padding: 5px 0;
+  background: none;
 }
 
 .langAccordion :global(.chakra-accordion__itemContent) {
-    margin-top: 15px;
-    padding: 0;
+  margin-top: 15px;
+  padding: 0;
 }
 
 @media (max-width: 768px) {
-    .nav {
-        justify-content: flex-end;
-        padding: 1rem 4rem;
-    }
+  .nav {
+    justify-content: flex-end;
+    padding: 1rem 4rem;
+  }
 }

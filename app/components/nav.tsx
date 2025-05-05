@@ -2,7 +2,7 @@
 
 import { useTransition } from 'react';
 import styles from './nav.module.css';
-import Link from 'next/link';
+import { Link } from '@/components/ui/link';
 import { HiOutlineCog } from "react-icons/hi";
 import { Menu, Portal, IconButton, Flex, Drawer, CloseButton, Separator, Accordion, Span, RadioGroup, VStack } from "@chakra-ui/react"
 import { ColorModeSwitch } from '@/components/ui/color-mode'
@@ -69,7 +69,7 @@ export function Nav() {
   const t = useTranslations('nav');
 
   return (
-    <Flex className={styles.nav}>
+    <nav className={styles.nav}>
       <Flex className={styles.navLinks} hideBelow="md">
         <Link
           href="/">
@@ -158,6 +158,6 @@ export function Nav() {
           </Portal>
         </Drawer.Root>
       </Flex>
-    </Flex>
+    </nav>
   )
 }
