@@ -2,7 +2,6 @@
 
 import { useTransition } from 'react';
 import styles from './nav.module.css';
-// import Link from 'next/link';
 import { Link } from '@/components/ui/link';
 import { HiOutlineCog } from "react-icons/hi";
 import { Menu, Portal, IconButton, Flex, Drawer, CloseButton, Separator, Accordion, Span, RadioGroup, VStack } from "@chakra-ui/react"
@@ -70,97 +69,95 @@ export function Nav() {
   const t = useTranslations('nav');
 
   return (
-    <header>
-      <Flex className={styles.nav}>
-        <Flex className={styles.navLinks} hideBelow="md">
-          <Link
-            href="/">
-            {t('home')}
-          </Link>
-          <Link
-            href="/about">
-            {t('about')}
-          </Link>
-          <Link
-            href="/work">
-            {t('work')}
-          </Link>
-          <Link
-            href="/contact">
-            {t('contact')}
-          </Link>
-        </Flex>
-        <Flex className={styles.navSettings} hideBelow="md">
-          <Menu.Root closeOnSelect={false}>
-            <Menu.Trigger asChild>
-              <IconButton
-                variant="ghost"
-              >
-                <HiOutlineCog size="lg" />
-              </IconButton>
-            </Menu.Trigger>
-            <Portal>
-              <Menu.Positioner>
-                <Menu.Content>
-                  <Menu.Item value="toggle-mode">
-                    <ColorModeSwitch label={t('toggleColorMode')} />
-                  </Menu.Item>
-                  <Menu.Item value="language">
-                    <LanguageSelect />
-                  </Menu.Item>
-                </Menu.Content>
-              </Menu.Positioner>
-            </Portal>
-          </Menu.Root>
-        </Flex>
-        <Flex hideFrom="md">
-          <Drawer.Root>
-            <Drawer.Trigger asChild>
-              <IconButton aria-label="Open menu" variant="ghost">
-                <RxHamburgerMenu />
-              </IconButton>
-            </Drawer.Trigger>
-            <Portal>
-              <Drawer.Backdrop />
-              <Drawer.Positioner>
-                <Drawer.Content>
-                  <Drawer.Header />
-                  <Drawer.Body>
-                    <Flex
-                      direction="column"
-                      gap="4"
-                    >
-                      <Link
-                        href="/">
-                        {t('home')}
-                      </Link>
-                      <Link
-                        href="/about">
-                        {t('about')}
-                      </Link>
-                      <Link
-                        href="/work">
-                        {t('work')}
-                      </Link>
-                      <Link
-                        href="/contact">
-                        {t('contact')}
-                      </Link>
-                      <Separator />
-                      <ColorModeSwitch label={t('toggleColorMode')} />
-                      <LanguageSelect />
-                    </Flex>
-                  </Drawer.Body>
-                  <Drawer.Footer />
-                  <Drawer.CloseTrigger asChild>
-                    <CloseButton size="sm" />
-                  </Drawer.CloseTrigger>
-                </Drawer.Content>
-              </Drawer.Positioner>
-            </Portal>
-          </Drawer.Root>
-        </Flex>
+    <nav className={styles.nav}>
+      <Flex className={styles.navLinks} hideBelow="md">
+        <Link
+          href="/">
+          {t('home')}
+        </Link>
+        <Link
+          href="/about">
+          {t('about')}
+        </Link>
+        <Link
+          href="/work">
+          {t('work')}
+        </Link>
+        <Link
+          href="/contact">
+          {t('contact')}
+        </Link>
       </Flex>
-    </header>
+      <Flex className={styles.navSettings} hideBelow="md">
+        <Menu.Root closeOnSelect={false}>
+          <Menu.Trigger asChild>
+            <IconButton
+              variant="ghost"
+            >
+              <HiOutlineCog size="lg" />
+            </IconButton>
+          </Menu.Trigger>
+          <Portal>
+            <Menu.Positioner>
+              <Menu.Content>
+                <Menu.Item value="toggle-mode">
+                  <ColorModeSwitch label={t('toggleColorMode')} />
+                </Menu.Item>
+                <Menu.Item value="language">
+                  <LanguageSelect />
+                </Menu.Item>
+              </Menu.Content>
+            </Menu.Positioner>
+          </Portal>
+        </Menu.Root>
+      </Flex>
+      <Flex hideFrom="md">
+        <Drawer.Root>
+          <Drawer.Trigger asChild>
+            <IconButton aria-label="Open menu" variant="ghost">
+              <RxHamburgerMenu />
+            </IconButton>
+          </Drawer.Trigger>
+          <Portal>
+            <Drawer.Backdrop />
+            <Drawer.Positioner>
+              <Drawer.Content>
+                <Drawer.Header />
+                <Drawer.Body>
+                  <Flex
+                    direction="column"
+                    gap="4"
+                  >
+                    <Link
+                      href="/">
+                      {t('home')}
+                    </Link>
+                    <Link
+                      href="/about">
+                      {t('about')}
+                    </Link>
+                    <Link
+                      href="/work">
+                      {t('work')}
+                    </Link>
+                    <Link
+                      href="/contact">
+                      {t('contact')}
+                    </Link>
+                    <Separator />
+                    <ColorModeSwitch label={t('toggleColorMode')} />
+                    <LanguageSelect />
+                  </Flex>
+                </Drawer.Body>
+                <Drawer.Footer />
+                <Drawer.CloseTrigger asChild>
+                  <CloseButton size="sm" />
+                </Drawer.CloseTrigger>
+              </Drawer.Content>
+            </Drawer.Positioner>
+          </Portal>
+        </Drawer.Root>
+      </Flex>
+    </nav>
   )
 }

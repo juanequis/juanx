@@ -1,0 +1,17 @@
+.link {
+  text-decoration: none;
+}
+
+.link.active {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-color: #353535;
+}
+
+/* :global(.light) .link.active {
+  text-decoration-color: #353535;
+}
+
+:global(.dark) .link.active {
+  text-decoration-color: #353535; */
+/* } */
