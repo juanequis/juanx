@@ -4,12 +4,10 @@ import { useState } from 'react';
 import { DataList, Heading, Status } from "@chakra-ui/react"
 import { Tooltip } from '@/components/ui/tooltip';
 
-
 type WebVital = {
   id: string;
   name: string;
   value: number;
-  label: string;
   rating: string;
 };
 

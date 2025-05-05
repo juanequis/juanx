@@ -1,11 +1,13 @@
 .nav {
   position: sticky;
   top: 0;
+  background: var(--background);
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1rem 10rem;
   width: 100%;
+  z-index: 999;
 }
 
 :global(.light) .nav {
