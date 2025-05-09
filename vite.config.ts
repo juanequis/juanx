@@ -1,3 +1,4 @@
+// We're only using vite config to configure testing fwk (vitest).
 import { defineConfig } from "vitest/config"
 import react from "@vitejs/plugin-react";
 import path from "path";
