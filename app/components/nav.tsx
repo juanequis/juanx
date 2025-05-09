@@ -21,8 +21,6 @@ export const LanguageSelect = () => {
   const handleLanguageChange = (value: string) => {
     const locale = value as Locale;
 
-    console.log(value);
-
     startTransition(() => {
       setUserLocale(locale);
     });
