@@ -1,13 +1,9 @@
 import { render } from "@/test-utils/render";
 import { describe, it, expect } from "vitest";
-import { toaster, Toaster } from "./toaster";
+import { /*toaster,*/ Toaster } from "./toaster";
 
 describe("Toaster component", () => {
   it("renders correctly with a loading toast", () => {
-    // toaster.notify({
-    //   type: "loading",
-    //   title: "Loading...",
-    // });
 
     const { container } = render(<Toaster />);
 
@@ -23,11 +19,6 @@ describe("Toaster component", () => {
   });
 
   it("renders correctly with a success toast", () => {
-    // toaster.notify({
-    //   type: "success",
-    //   title: "Success!",
-    //   description: "Operation completed successfully.",
-    // });
 
     const { container } = render(<Toaster />);
 
@@ -43,12 +34,6 @@ describe("Toaster component", () => {
   });
 
   it("renders correctly with an action toast", () => {
-    // toaster.notify({
-    //   type: "info",
-    //   title: "Action Required",
-    //   action: { label: "Retry" },
-    // });
-
     const { container } = render(<Toaster />);
 
     expect(container).toMatchInlineSnapshot(`
@@ -63,12 +48,6 @@ describe("Toaster component", () => {
   });
 
   it("renders correctly with a closable toast", () => {
-    // toaster.notify({
-    //   type: "warning",
-    //   title: "Warning!",
-    //   meta: { closable: true },
-    // });
-
     const { container } = render(<Toaster />);
 
     expect(container).toMatchInlineSnapshot(`
