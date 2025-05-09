@@ -1,4 +1,3 @@
-// import { render } from '@testing-library/react';
 import { render } from "@/test-utils/render";
 import { describe, it, expect, vi, beforeEach, Mock } from 'vitest';
 import RootLayout from './layout';
