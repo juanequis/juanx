@@ -74,14 +74,3 @@ vi.mock("next-intl", () => ({
   }),
   useLocale: vi.fn(() => "en"), // Mock `useLocale` to return a default locale
 }));
-
-// Set default viewport size to desktop dimensions
-// Object.defineProperty(window, "innerWidth", {
-//   value: 1024, // Desktop width
-//   writable: true,
-// });
-// Object.defineProperty(window, "innerHeight", {
-//   value: 768, // Desktop height
-//   writable: true,
-// });
-// window.dispatchEvent(new Event("resize")); // Trigger resize event to apply changes
