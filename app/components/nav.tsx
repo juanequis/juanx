@@ -11,7 +11,7 @@ import { useTranslations, useLocale } from 'next-intl';
 import { setUserLocale } from '@/i18n/locale';
 import type { Locale } from '@/i18n/settings';
 
-const LanguageSelect = () => {
+export const LanguageSelect = () => {
   const t = useTranslations('nav');
 
   const locale = useLocale();
@@ -20,6 +20,8 @@ const LanguageSelect = () => {
 
   const handleLanguageChange = (value: string) => {
     const locale = value as Locale;
+
+    console.log(value);
 
     startTransition(() => {
       setUserLocale(locale);
@@ -88,9 +90,9 @@ export function Nav() {
           {t('contact')}
         </Link>
       </Flex>
-      <Flex className={styles.navSettings} hideBelow="md">
+      <Flex className={styles.navSettings} hideBelow="md" >
         <Menu.Root closeOnSelect={false}>
-          <Menu.Trigger asChild>
+          <Menu.Trigger asChild aria-label="Open menu">
             <IconButton
               variant="ghost"
             >
@@ -114,7 +116,7 @@ export function Nav() {
       <Flex hideFrom="md">
         <Drawer.Root>
           <Drawer.Trigger asChild>
-            <IconButton aria-label="Open menu" variant="ghost">
+            <IconButton aria-label="Open mobile menu" variant="ghost">
               <RxHamburgerMenu />
             </IconButton>
           </Drawer.Trigger>

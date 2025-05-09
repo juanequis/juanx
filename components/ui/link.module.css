@@ -5,6 +5,14 @@
 .link.active {
   text-decoration: underline;
   text-underline-offset: 6px;
+  /* text-decoration-color: #353535; */
+  text-decoration-color: #4c4c4c;
+}
+
+.link:hover {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  /* text-decoration-color: #757575; */
   text-decoration-color: #353535;
 }
 
