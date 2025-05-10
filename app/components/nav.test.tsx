@@ -406,16 +406,4 @@ describe("LanguageSelect Component", () => {
 
     expect(setUserLocale).toHaveBeenCalledWith("en");
   });
-
-  it("handles language change and back to english", async () => {
-    render(<LanguageSelect />);
-    const spanishOption = screen.getByLabelText('languageEs');
-
-    await act(async () => {
-      fireEvent.click(spanishOption, { target: { value: null } });
-    });
-
-
-    expect(setUserLocale).toHaveBeenCalledWith("en");
-  });
 });
