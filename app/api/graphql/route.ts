@@ -1,11 +1,14 @@
-import { createYoga } from "graphql-yoga"
-// import { NextRequest } from "next/server"
-import { createSchema } from "./schema"
+import { createYoga } from "graphql-yoga";
+import { createSchema } from "./schema";
+import { NextRequest } from "next/server";
 
 const { handleRequest } = createYoga({
   schema: createSchema(),
   graphqlEndpoint: "/api/graphql",
-  // fetchAPI: { Request: NextRequest },
-})
+  fetchAPI: {
+    Request: NextRequest as unknown as typeof Request,
+    Response: Response,
+  },
+});
 
-export { handleRequest as GET, handleRequest as POST }
+export { handleRequest as GET, handleRequest as POST };
