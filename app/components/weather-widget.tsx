@@ -9,11 +9,10 @@ export const WeatherWidget = () => {
   if (!weather || !weather.condition && loading) return <div>Loading...</div>;
 
   return (
-    <div>
-      {/* <img src={weather.condition.icon} alt={weather.condition.text} /> */}
+    <>
       <Image src={`http:${weather?.condition.icon}`} alt={weather?.condition.text} width={50} height={50} />
       <p>{weather?.condition.text}</p>
       <p>{weather?.condition.temperature}°C</p>
-    </div>
+    </>
   );
 };
