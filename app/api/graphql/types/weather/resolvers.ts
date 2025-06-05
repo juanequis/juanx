@@ -17,7 +17,7 @@ export const weatherResolvers = {
         condition: {
           icon: data.current.condition.icon,
           text: data.current.condition.text,
-          temperature: data.current.temp_c, // Assuming you want the temperature in Celsius
+          temperature: data.current.temp_c, // Assuming we want the temperature in Celsius
         },
         location: `${data.location.name}, ${data.location.region}, ${data.location.country}`,
       };

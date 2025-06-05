@@ -1,4 +1,4 @@
-export const weatherTypeDefs = /* GraphQL */ `
+export const weatherTypeDefs = `
   type Condition {
     icon: String
     text: String

@@ -2,7 +2,7 @@ import { ApolloClient, InMemoryCache } from "@apollo/client"
 import type { Weather } from "../graphql/types/weather/typeDefs";
 import { gql } from "@apollo/client"
 
-const GET_WEATHER = /* GraphQL */ gql`
+const GET_WEATHER = gql`
   query GetWeather($latitude: Float!, $longitude: Float!) {
     weather(latitude: $latitude, longitude: $longitude) {
       condition {
@@ -19,7 +19,7 @@ const GET_WEATHER = /* GraphQL */ gql`
   }
 `
 
-class GraphQLUserService /*implements UserService */ {
+class GraphQLUserService {
   private client: ApolloClient<unknown>
 
   constructor() {
