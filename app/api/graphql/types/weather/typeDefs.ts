@@ -5,15 +5,9 @@ export const weatherTypeDefs = /* GraphQL */ `
     temperature: Float
   }
 
-  type Location {
-    country: String
-    name: String
-    region: String
-  }
-
   type Weather {
     condition: Condition
-    location: Location
+    location: String
     text: String
     temperature: Float
   }
