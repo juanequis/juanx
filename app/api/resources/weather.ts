@@ -10,11 +10,7 @@ const GET_WEATHER = gql`
         text
         temperature
       }
-      location {
-        country
-        name
-        region
-      }
+      location
     }
   }
 `
