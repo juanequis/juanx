@@ -7,9 +7,6 @@ export default function Home() {
       <main className={styles.main}>
         <ol>
           <li>
-            SAPEEEE <code>app/page.tsx</code>.
-          </li>
-          <li>
             <Link href="/"> Return <code> to index!</code>←</Link>
           </li>
         </ol>

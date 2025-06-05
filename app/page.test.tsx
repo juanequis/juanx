@@ -29,6 +29,9 @@ describe("Home Page", () => {
                 orientation="horizontal"
               />
             </div>
+            <div>
+              Loading...
+            </div>
           </main>
           <footer
             class="_footer_cdf1a1"
