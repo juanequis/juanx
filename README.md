@@ -1,16 +1,18 @@
-## Welcome to my project
+## Welcome 👋
 
-This is a personal project created to showcase my technical skills and test different technologies.
-The tech stack is:
+This is my personal playground for experimenting with modern front-end technologies that help build modern, high-quality web applications.
+I use this project to prototype ideas, test integrations, and refine reusable components for future work.
+If you're exploring frontend development or looking for practical examples of a modern tech stack in action, feel free to browse around!
+
+🔧 The tech stack is:
  - Next.js
-- TypeScript
+ - TypeScript
  - GraphQL
  - Apollo Client
  - Chakra UI
- - Next Intl - Internationalization librarys.
- - WeatherAPI - External API for fetching weather data.
+ - Next Intl
+ - WeatherAPI
  - Vitest
-
 
 ## Getting Started
 
