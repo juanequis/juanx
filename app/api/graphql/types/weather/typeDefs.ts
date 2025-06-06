@@ -32,5 +32,5 @@ export type Location = {
 
 export type Weather = {
   condition: Condition
-  location: Location
+  location: string
 }
