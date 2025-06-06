@@ -24,12 +24,6 @@ export type Condition = {
   temperature: number
 }
 
-export type Location = {
-  country: string
-  name: string
-  region: string
-}
-
 export type Weather = {
   condition: Condition
   location: string
