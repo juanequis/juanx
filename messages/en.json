@@ -1,14 +1,23 @@
 {
-    "nav": {
-        "title": "My Portfolio",
-        "home": "Home",
-        "about": "About",
-        "work": "Work",
-        "contact": "Contact",
-        "language": "Language",
-        "languageEn": "English",
-        "languageEs": "Spanish",
-        "languageFr": "French",
-        "toggleColorMode": "Mode"
-    }
+  "nav": {
+    "title": "My Portfolio",
+    "home": "Home",
+    "about": "About",
+    "work": "Work",
+    "contact": "Contact",
+    "language": "Language",
+    "languageEn": "English",
+    "languageEs": "Spanish",
+    "languageFr": "French",
+    "toggleColorMode": "Mode"
+  },
+  "weather-widget": {
+    "loading": "Loading",
+    "inactiveText": "What's the weather like in my location?"
+  },
+  "home": {
+    "greeting": "👋 Hi, I'm JC!",
+    "intro": "I'm a senior front-end engineer with over 12 years of experience in the software industry. I specialize in modern technologies like <strong>React</strong>, <strong>TypeScript</strong>, and <strong>GraphQL</strong>. I'm passionate about creating thoughtful user interfaces with a strong focus on performance, testing, design consistency, and developer experience. I value cross-functional collaboration — working closely with designers, providing feedback, and helping turn ideas into polished experiences. I'm also committed to improving team processes and fostering more efficient, scalable workflows.",
+    "explore": "This site is a space where I explore ideas and test different technologies."
+  }
 }
