@@ -11,8 +11,6 @@ import styles from "../page.module.css";
 export function IntroText() {
   const t = useTranslations('home');
 
-  console.log(`${t}`);
-
   return (
     <Text className={styles.description} mb={4}>
       {t.rich('intro', {
