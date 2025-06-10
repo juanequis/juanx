@@ -35,12 +35,6 @@ describe("Nav Component", () => {
             </a>
             <a
               class="chakra-link _link_429e0e css-2yvnes"
-              href="/about"
-            >
-              about
-            </a>
-            <a
-              class="chakra-link _link_429e0e css-2yvnes"
               href="/work"
             >
               work

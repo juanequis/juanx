@@ -74,3 +74,12 @@ vi.mock("next-intl", () => ({
   }),
   useLocale: vi.fn(() => "en"), // Mock `useLocale` to return a default locale
 }));
+
+// Mock next/image
+vi.mock("next/image", () => ({
+  __esModule: true,
+  default: (props: React.ImgHTMLAttributes<HTMLImageElement>) => {
+    const { src, alt, ...rest } = props;
+    return <img src={src} alt={alt} {...rest} />;
+  },
+}));

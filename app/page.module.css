@@ -44,7 +44,7 @@
 .main {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 45px;
   grid-row-start: 2;
 }
 
@@ -68,6 +68,10 @@
   padding: 2px 4px;
   border-radius: 4px;
   font-weight: 600;
+}
+
+.intro {
+  max-width: 600px;
 }
 
 .ctas {

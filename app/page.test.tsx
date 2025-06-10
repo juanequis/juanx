@@ -1,6 +1,10 @@
 import { render } from "@/test-utils/render";
-import { describe, it, expect } from "vitest";
+import { vi, describe, it, expect } from "vitest";
 import Home from "./page";
+
+vi.mock("./components/IntroText", () => ({
+  IntroText: () => <div>Intro Text Component</div>
+}));
 
 describe("Home Page", () => {
   it("renders correctly and matches snapshot", () => {
@@ -18,39 +22,40 @@ describe("Home Page", () => {
           <main
             class="_main_cdf1a1"
           >
-            <div>
-              <h2
-                class="chakra-heading css-k5qncm"
+            <article
+              class="_intro_cdf1a1"
+            >
+              <div
+                class="css-0"
+                style="opacity: 0; transform: translateX(-100px);"
               >
-                Web Vitals
-              </h2>
-              <dl
-                class="chakra-data-list__root css-vl9gr6"
-                orientation="horizontal"
-              />
-            </div>
-            <div>
-              Loading...
-            </div>
+                <h2
+                  class="chakra-heading _title_cdf1a1 css-fabdue"
+                >
+                  greeting
+                </h2>
+                <div>
+                  Intro Text Component
+                </div>
+                <p
+                  class="css-0"
+                >
+                  explore
+                </p>
+              </div>
+            </article>
+            <article>
+              <div
+                class="css-1uasfij"
+              >
+                <em
+                  class="css-1kvvtld"
+                >
+                  inactiveText
+                </em>
+              </div>
+            </article>
           </main>
-          <footer
-            class="_footer_cdf1a1"
-          >
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              Learn
-            </a>
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              Examples
-            </a>
-          </footer>
         </div>
       </div>
     `);

@@ -75,10 +75,10 @@ export function Nav() {
           href="/">
           {t('home')}
         </Link>
-        <Link
+        {/* <Link
           href="/about">
           {t('about')}
-        </Link>
+        </Link> */}
         <Link
           href="/work">
           {t('work')}
@@ -132,10 +132,10 @@ export function Nav() {
                       href="/">
                       {t('home')}
                     </Link>
-                    <Link
+                    {/* <Link
                       href="/about">
                       {t('about')}
-                    </Link>
+                    </Link> */}
                     <Link
                       href="/work">
                       {t('work')}
