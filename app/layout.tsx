@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Provider as ChakraProvider } from '@/components/ui/provider';
-import { Nav } from "./components/nav";
+import { Nav } from "./_components/nav";
 import { NextIntlClientProvider } from 'next-intl';
 import { getLocale } from 'next-intl/server';
 

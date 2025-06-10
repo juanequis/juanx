@@ -1,5 +1,5 @@
 "use client";
-import { useWeather } from '@/app/hooks/use-weather';
+import { useWeather } from '@/app/_hooks/use-weather';
 import Image from "next/image";
 import { Box, Flex, Em, Stack, VStack, Skeleton, SkeletonText } from "@chakra-ui/react";
 import { useTranslations } from 'next-intl';
