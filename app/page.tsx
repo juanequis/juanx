@@ -3,7 +3,7 @@ import { Heading, Text } from "@chakra-ui/react";
 import { MotionBox } from './components/motion';
 import { useTranslations } from 'next-intl';
 import { IntroText } from './components/IntroText';
-import { WeatherWidget } from "./components/weather-widget";
+import { WeatherWidget } from "./components/WeatherWidget";
 
 export default function Home() {
   const t = useTranslations('home');
