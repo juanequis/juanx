@@ -1,7 +1,7 @@
 ## Welcome 👋
 
-This is my personal playground for experimenting with modern front-end technologies that help build modern, high-quality web applications.
-I use this project to prototype ideas, test integrations, and refine reusable components for future work.
+This is my personal playground for experimenting with modern front-end technologies.
+I use this project as a portfolio and also to prototype ideas and test technologies.
 If you're exploring frontend development or looking for practical examples of a modern tech stack in action, feel free to browse around!
 
 🔧 The tech stack is:
