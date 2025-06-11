@@ -23,6 +23,12 @@
   gap: 2rem;
 }
 
+.navSocial {
+  display: flex;
+  gap: 0.8rem;
+  margin-right: 1rem;
+}
+
 .langAccordion :global(.chakra-accordion__itemTrigger) {
   padding: 0;
   /* margin-bottom: 5px; */

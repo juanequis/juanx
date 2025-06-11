@@ -40,6 +40,7 @@ describe("Work Page", () => {
             </article>
             <article>
               <a
+                aria-labelledby="downloadCvButton"
                 class="_downloadLink_ff75dc"
                 download=""
                 href="/cv.pdf"
@@ -47,6 +48,7 @@ describe("Work Page", () => {
               >
                 <button
                   class="chakra-button css-zqnclt"
+                  id="downloadCvButton"
                   type="button"
                 >
                   downloadCv

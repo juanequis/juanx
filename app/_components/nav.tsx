@@ -10,6 +10,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { useTranslations, useLocale } from 'next-intl';
 import { setUserLocale } from '@/i18n/locale';
 import type { Locale } from '@/i18n/settings';
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 export const LanguageSelect = () => {
   const t = useTranslations('nav');
@@ -83,33 +84,54 @@ export function Nav() {
           href="/work">
           {t('work')}
         </Link>
-        <Link
+        {/* <Link
           href="/contact">
           {t('contact')}
-        </Link>
+        </Link> */}
       </Flex>
-      <Flex className={styles.navSettings} hideBelow="md" >
-        <Menu.Root closeOnSelect={false}>
-          <Menu.Trigger asChild aria-label="Open menu">
-            <IconButton
-              variant="ghost"
-            >
-              <HiOutlineCog size="lg" />
-            </IconButton>
-          </Menu.Trigger>
-          <Portal>
-            <Menu.Positioner>
-              <Menu.Content>
-                <Menu.Item value="toggle-mode">
-                  <ColorModeSwitch label={t('toggleColorMode')} />
-                </Menu.Item>
-                <Menu.Item value="language">
-                  <LanguageSelect />
-                </Menu.Item>
-              </Menu.Content>
-            </Menu.Positioner>
-          </Portal>
-        </Menu.Root>
+      <Flex alignItems="center">
+        <Flex className={styles.navSocial}>
+          <a
+            href="https://www.linkedin.com/in/jcavellaneda87/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn profile"
+          >
+            <FaLinkedin size="1.5em" />
+          </a>
+          <a
+            href="https://github.com/juanequis"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub profile"
+          >
+            <FaGithub size="1.5em" />
+          </a>
+        </Flex>
+        <Flex hideBelow="md" >
+          <Menu.Root closeOnSelect={false}>
+            <Menu.Trigger asChild aria-label="Open menu">
+              <IconButton
+                variant="ghost"
+                height="20 px"
+              >
+                <HiOutlineCog size="lg" />
+              </IconButton>
+            </Menu.Trigger>
+            <Portal>
+              <Menu.Positioner>
+                <Menu.Content>
+                  <Menu.Item value="toggle-mode">
+                    <ColorModeSwitch label={t('toggleColorMode')} />
+                  </Menu.Item>
+                  <Menu.Item value="language">
+                    <LanguageSelect />
+                  </Menu.Item>
+                </Menu.Content>
+              </Menu.Positioner>
+            </Portal>
+          </Menu.Root>
+        </Flex>
       </Flex>
       <Flex hideFrom="md">
         <Drawer.Root>
@@ -140,10 +162,10 @@ export function Nav() {
                       href="/work">
                       {t('work')}
                     </Link>
-                    <Link
+                    {/* <Link
                       href="/contact">
                       {t('contact')}
-                    </Link>
+                    </Link> */}
                     <Separator />
                     <ColorModeSwitch label={t('toggleColorMode')} />
                     <LanguageSelect />
