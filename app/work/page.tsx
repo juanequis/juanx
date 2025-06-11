@@ -22,7 +22,7 @@ export default function Work() {
           </MotionBox>
         </article>
         <article>
-          <a href="/cv.pdf" download target="_blank" className={localStyles.downloadLink} aria-labelledby="downloadCvButton">
+          <a href="/CV-Juan-Cruz-Avellaneda.pdf" download target="_blank" className={localStyles.downloadLink} aria-labelledby="downloadCvButton">
             <Button id="downloadCvButton" variant="surface">
               {t('downloadCv', { defaultMessage: 'Download CV' })}
             </Button>
