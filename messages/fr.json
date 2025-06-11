@@ -17,7 +17,8 @@
   },
   "home": {
     "greeting": "👋 Bonjour, je suis JC !",
-    "intro": "Je suis un ingénieur front-end senior avec plus de 12 ans d'expérience dans l'industrie du logiciel. Je me spécialise dans les technologies modernes comme <strong>React</strong>, <strong>TypeScript</strong> et <strong>GraphQL</strong>. Je suis passionné par la création d'interfaces utilisateur réfléchies avec un fort accent sur les performances, les tests, la cohérence du design et l'expérience développeur. J'apprécie la collaboration interfonctionnelle : travailler en étroite collaboration avec les designers et aider à transformer des idées en expériences complètes. Je m'engage également à améliorer les processus de l'équipe et à favoriser des flux de travail plus efficaces et évolutifs."
+    "intro": "Je suis un ingénieur front-end senior avec plus de 12 ans d'expérience dans l'industrie du logiciel. Je me spécialise dans les technologies modernes comme <strong>React</strong>, <strong>TypeScript</strong> et <strong>GraphQL</strong>. Je suis passionné par la création d'interfaces utilisateur réfléchies avec un fort accent sur les performances, les tests, la cohérence du design et l'expérience développeur. J'apprécie la collaboration interfonctionnelle : travailler en étroite collaboration avec les designers et aider à transformer des idées en expériences complètes. Je m'engage également à améliorer les processus de l'équipe et à favoriser des flux de travail plus efficaces et évolutifs.",
+    "explore": "Ce site est un espace où j'explore des idées et teste différentes technologies."
   },
   "work": {
     "title": "👷 Mon Expérience Professionnelle",
