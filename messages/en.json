@@ -17,7 +17,12 @@
   },
   "home": {
     "greeting": "👋 Hi, I'm JC!",
-    "intro": "I'm a senior front-end engineer with over 12 years of experience in the software industry. I specialize in modern technologies like <strong>React</strong>, <strong>TypeScript</strong>, and <strong>GraphQL</strong>. I'm passionate about creating thoughtful user interfaces with a strong focus on performance, testing, design consistency, and developer experience. I value cross-functional collaboration — working closely with designers, providing feedback, and helping turn ideas into polished experiences. I'm also committed to improving team processes and fostering more efficient, scalable workflows.",
+    "intro": "I'm a senior front-end engineer with over 12 years of experience in the software industry. I specialize in modern technologies like <strong>React</strong>, <strong>TypeScript</strong>, and <strong>GraphQL</strong>. I'm passionate about creating thoughtful user interfaces with a strong focus on testing, design consistency, and developer experience. I value cross-functional collaboration — working closely with designers, helping turn ideas into polished experiences. I'm committed to improving team processes and fostering more efficient, scalable workflows. Continuous growth is a core part of how I work — I'm always looking to learn, evolve, and refine my skills both technically and collaboratively.",
     "explore": "This site is a space where I explore ideas and test different technologies."
+  },
+  "work": {
+    "title": "👷 My Work Experience",
+    "description": "Throughout my career, I’ve worked across companies of different sizes — from early-stage startups to large enterprises — helping teams bring web applications to life. Most recently, I led the frontend for a sustainability-focused startup, designing and shipping a full-featured SPA from scratch. Before that, I spent several years at Split Software, where I helped scale their feature flagging platform and refine frontend best practices.",
+    "downloadCv": "Download my CV"
   }
 }
