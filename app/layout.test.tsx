@@ -8,7 +8,7 @@ vi.mock('next-intl/server', () => ({
 }));
 
 
-vi.mock('./components/nav', () => ({
+vi.mock('./_components/nav', () => ({
   Nav: () => <nav>Mocked Nav</nav>,
 }));
 

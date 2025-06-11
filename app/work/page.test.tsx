@@ -1,14 +1,14 @@
 import { render } from "@/test-utils/render";
 import { vi, describe, it, expect } from "vitest";
-import Home from "./page";
+import Work from "./page";
 
-vi.mock("./_components/IntroText", () => ({
-  IntroText: () => <div>Intro Text Component</div>
+vi.mock("../_components/motion", () => ({
+  MotionBox: ({ children }: { children: React.ReactNode }) => <div>{children}</div>
 }));
 
-describe("Home Page", () => {
+describe("Work Page", () => {
   it("renders correctly and matches snapshot", () => {
-    const { container } = render(<Home />);
+    const { container } = render(<Work />);
     expect(container).toMatchInlineSnapshot(`
       <div>
         <script
@@ -25,35 +25,33 @@ describe("Home Page", () => {
             <article
               class="_intro_cdf1a1"
             >
-              <div
-                class="css-0"
-                style="opacity: 0; transform: translateX(-100px);"
-              >
+              <div>
                 <h2
                   class="chakra-heading _title_cdf1a1 css-fabdue"
                 >
-                  greeting
+                  title
                 </h2>
-                <div>
-                  Intro Text Component
-                </div>
                 <p
-                  class="css-0"
+                  class="css-n33ttv"
                 >
-                  explore
+                  description
                 </p>
               </div>
             </article>
             <article>
-              <div
-                class="css-1uasfij"
+              <a
+                class="_downloadLink_ff75dc"
+                download=""
+                href="/cv.pdf"
+                target="_blank"
               >
-                <em
-                  class="css-1kvvtld"
+                <button
+                  class="chakra-button css-zqnclt"
+                  type="button"
                 >
-                  inactiveText
-                </em>
-              </div>
+                  downloadCv
+                </button>
+              </a>
             </article>
           </main>
         </div>

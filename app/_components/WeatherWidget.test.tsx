@@ -4,7 +4,7 @@ import { describe, it, expect, vi } from "vitest";
 import { WeatherWidget } from "./WeatherWidget";
 import { useWeather } from "@/app/_hooks/use-weather";
 
-vi.mock("@/app/hooks/use-weather", () => ({
+vi.mock("@/app/_hooks/use-weather", () => ({
   useWeather: vi.fn(),
 }));
 
