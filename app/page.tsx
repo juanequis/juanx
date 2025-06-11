@@ -1,5 +1,5 @@
 import styles from "./page.module.css";
-import { Heading, Text } from "@chakra-ui/react";
+import { Heading } from "@chakra-ui/react";
 import { MotionBox } from './_components/motion';
 import { useTranslations } from 'next-intl';
 import { IntroText } from './_components/IntroText';
@@ -20,7 +20,6 @@ export default function Home() {
               {t('greeting')}
             </Heading>
             <IntroText />
-            <Text>{t('explore')}</Text>
           </MotionBox>
         </article>
         <article>

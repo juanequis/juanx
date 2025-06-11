@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@apollo/client": "^3.13.8",
-    "@chakra-ui/react": "^3.16.0",
+    "@chakra-ui/react": "^3.20.0",
     "@emotion/react": "^11.14.0",
     "graphql": "^16.11.0",
     "graphql-yoga": "^5.13.5",

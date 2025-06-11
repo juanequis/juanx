@@ -17,7 +17,12 @@
   },
   "home": {
     "greeting": "👋 ¡Hola, soy JC!",
-    "intro": "Soy un ingeniero front-end senior con más de 12 años de experiencia en la industria del software. Me especializo en tecnologías modernas como <strong>React</strong>, <strong>TypeScript</strong> y <strong>GraphQL</strong>. Me apasiona crear interfaces de usuario reflexivas con un fuerte enfoque en el rendimiento, las pruebas, la consistencia del diseño y la experiencia del desarrollador. Valoro la colaboración interfuncional: trabajar estrechamente con diseñadores, proporcionar retroalimentación y ayudar a convertir ideas en experiencias pulidas. También estoy comprometido a mejorar los procesos del equipo y fomentar flujos de trabajo más eficientes y escalables.",
+    "intro": "Soy ingeniero front-end sénior con más de 12 años de experiencia en la industria del software. Me especializo en tecnologías como <strong>React</strong>, <strong>TypeScript</strong> y <strong>GraphQL</strong>. Me apasiona crear interfaces de usuario intuitivas, con un fuerte enfoque en el testing, la consistencia de diseño y la experiencia del desarrollador. Valoro la colaboración interdisciplinaria: trabajo en estrecha colaboración con diseñadores, ayudando a convertir las ideas en experiencias satisfactorias. Tengo un fuerte compromiso con mejorar los procesos de equipo y a fomentar flujos de trabajo eficientes y escalables. El crecimiento continuo es fundamental en mi trabajo: siempre busco aprender, evolucionar y perfeccionar mis habilidades, tanto técnicas como colaborativas.",
     "explore": "Este sitio es un espacio donde exploro ideas y pruebo tecnologías diferentes."
+  },
+  "work": {
+    "title": "👷 Mi Experiencia Laboral",
+    "description": "Durante mi carrera, trabajé en empresas de diferentes tamaños, desde startups en sus inicios como en una software factory con clientes internacionales, ayudando a los equipos a implementar aplicaciones web. Más recientemente, lideré el desarrollo de una cliente web para una startup enfocada en la sostenibilidad, diseñando y lanzando una SPA completa desde cero. Antes de eso, pasé varios años en Split Software, donde ayudé a desarrollar su plataforma de feature flagging y a mejorar los procesos de frontend.",
+    "downloadCv": "Descargar mi CV"
   }
 }
