@@ -37,11 +37,6 @@ describe("Home Page", () => {
                 <div>
                   Intro Text Component
                 </div>
-                <p
-                  class="css-0"
-                >
-                  explore
-                </p>
               </div>
             </article>
             <article>
