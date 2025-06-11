@@ -43,7 +43,7 @@ describe("Work Page", () => {
                 aria-labelledby="downloadCvButton"
                 class="_downloadLink_ff75dc"
                 download=""
-                href="/cv.pdf"
+                href="/CV-Juan-Cruz-Avellaneda.pdf"
                 target="_blank"
               >
                 <button
