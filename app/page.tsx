@@ -20,7 +20,6 @@ export default function Home() {
               {t('greeting')}
             </Heading>
             <IntroText />
-            <Text>{t('explore')}</Text>
           </MotionBox>
         </article>
         <article>
