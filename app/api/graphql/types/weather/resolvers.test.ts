@@ -5,6 +5,7 @@ import { GraphQLError } from "graphql";
 describe("weatherResolvers", () => {
   const originalEnv = process.env;
 
+  /** @TODO See if can do vi.resetModules globally */
   beforeEach(() => {
     vi.resetModules(); // Clear module cache
     process.env = { ...originalEnv }; // Reset environment variables
@@ -58,6 +59,7 @@ describe("weatherResolvers", () => {
     });
 
     it("should throw an error if WEATHER_API_KEY is not defined", async () => {
+      /**@TODO find a better alternative maybe? */
       delete process.env.WEATHER_API_KEY;
 
       await expect(
