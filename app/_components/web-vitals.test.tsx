@@ -84,12 +84,12 @@ describe("WebVitals Component", () => {
                 class="chakra-data-list__itemValue css-15out64"
               >
                 <div
-                  class="chakra-tooltip__trigger chakra-status__root css-1ff6lr1"
+                  class="chakra-tooltip__trigger chakra-status__root css-7t0bx3"
                   data-part="trigger"
                   data-scope="tooltip"
                   data-state="closed"
                   dir="ltr"
-                  id="tooltip:«r0»:trigger"
+                  id="tooltip:_r_0_:trigger"
                 >
                   <div
                     class="chakra-status__indicator css-1ulvpke"
@@ -114,12 +114,12 @@ describe("WebVitals Component", () => {
                 class="chakra-data-list__itemValue css-15out64"
               >
                 <div
-                  class="chakra-tooltip__trigger chakra-status__root css-63dpt8"
+                  class="chakra-tooltip__trigger chakra-status__root css-zi04te"
                   data-part="trigger"
                   data-scope="tooltip"
                   data-state="closed"
                   dir="ltr"
-                  id="tooltip:«r1»:trigger"
+                  id="tooltip:_r_1_:trigger"
                 >
                   <div
                     class="chakra-status__indicator css-1ulvpke"
@@ -144,12 +144,12 @@ describe("WebVitals Component", () => {
                 class="chakra-data-list__itemValue css-15out64"
               >
                 <div
-                  class="chakra-tooltip__trigger chakra-status__root css-1bskaxt"
+                  class="chakra-tooltip__trigger chakra-status__root css-1702rkq"
                   data-part="trigger"
                   data-scope="tooltip"
                   data-state="closed"
                   dir="ltr"
-                  id="tooltip:«r2»:trigger"
+                  id="tooltip:_r_2_:trigger"
                 >
                   <div
                     class="chakra-status__indicator css-1ulvpke"
@@ -229,12 +229,12 @@ describe("WebVitals Component", () => {
                 class="chakra-data-list__itemValue css-15out64"
               >
                 <div
-                  class="chakra-tooltip__trigger chakra-status__root css-1ff6lr1"
+                  class="chakra-tooltip__trigger chakra-status__root css-7t0bx3"
                   data-part="trigger"
                   data-scope="tooltip"
                   data-state="closed"
                   dir="ltr"
-                  id="tooltip:«r3»:trigger"
+                  id="tooltip:_r_3_:trigger"
                 >
                   <div
                     class="chakra-status__indicator css-1ulvpke"
@@ -259,12 +259,12 @@ describe("WebVitals Component", () => {
                 class="chakra-data-list__itemValue css-15out64"
               >
                 <div
-                  class="chakra-tooltip__trigger chakra-status__root css-1bskaxt"
+                  class="chakra-tooltip__trigger chakra-status__root css-1702rkq"
                   data-part="trigger"
                   data-scope="tooltip"
                   data-state="closed"
                   dir="ltr"
-                  id="tooltip:«r4»:trigger"
+                  id="tooltip:_r_4_:trigger"
                 >
                   <div
                     class="chakra-status__indicator css-1ulvpke"

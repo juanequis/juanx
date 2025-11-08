@@ -188,12 +188,12 @@ describe("Color Mode components", () => {
             data-scope="switch"
             data-state="unchecked"
             dir="ltr"
-            for="switch:«r0»:input"
-            id="switch:«r0»"
+            for="switch:_r_0_:input"
+            id="switch:_r_0_"
           >
             <input
-              aria-labelledby="switch:«r0»:label"
-              id="switch:«r0»:input"
+              aria-labelledby="switch:_r_0_:label"
+              id="switch:_r_0_:input"
               style="border: 0px; height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap; word-wrap: normal;"
               type="checkbox"
               value="on"
@@ -204,7 +204,7 @@ describe("Color Mode components", () => {
               data-scope="switch"
               data-state="unchecked"
               dir="ltr"
-              id="switch:«r0»:label"
+              id="switch:_r_0_:label"
             >
               Label
             </span>
@@ -215,7 +215,7 @@ describe("Color Mode components", () => {
               data-scope="switch"
               data-state="unchecked"
               dir="ltr"
-              id="switch:«r0»:control"
+              id="switch:_r_0_:control"
             >
               <span
                 aria-hidden="true"
@@ -224,7 +224,7 @@ describe("Color Mode components", () => {
                 data-scope="switch"
                 data-state="unchecked"
                 dir="ltr"
-                id="switch:«r0»:thumb"
+                id="switch:_r_0_:thumb"
               />
               <span
                 class="css-1wn9d01"

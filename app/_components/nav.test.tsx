@@ -22,19 +22,19 @@ describe("Nav Component", () => {
           ((e,i,s,u,m,a,l,h)=&gt;{let d=document.documentElement,w=["light","dark"];function p(n){(Array.isArray(e)?e:[e]).forEach(y=&gt;{let k=y==="class",S=k&&a?m.map(f=&gt;a[f]||f):m;k?(d.classList.remove(...S),d.classList.add(a&&a[n]?a[n]:n)):d.setAttribute(y,n)}),R(n)}function R(n){h&&w.includes(n)&&(d.style.colorScheme=n)}function c(){return window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}if(u)p(u);else try{let n=localStorage.getItem(i)||s,y=l&&n==="system"?c():n;p(y)}catch(n){}})("class","theme","system",null,["light","dark"],null,true,true)
         </script>
         <nav
-          class="_nav_66c2c5"
+          class="_nav_556229"
         >
           <div
-            class="_navLinks_66c2c5 css-1ncwuo4"
+            class="_navLinks_556229 css-1ncwuo4"
           >
             <a
-              class="chakra-link _link_429e0e css-2yvnes"
+              class="chakra-link _link_99cf69 css-2yvnes"
               href="/"
             >
               home
             </a>
             <a
-              class="chakra-link _link_429e0e css-2yvnes"
+              class="chakra-link _link_99cf69 css-2yvnes"
               href="/work"
             >
               work
@@ -44,7 +44,7 @@ describe("Nav Component", () => {
             class="css-70qvj9"
           >
             <div
-              class="_navSocial_66c2c5 css-k008qs"
+              class="_navSocial_556229 css-k008qs"
             >
               <a
                 aria-label="LinkedIn profile"
@@ -93,13 +93,13 @@ describe("Nav Component", () => {
               <button
                 aria-haspopup="menu"
                 aria-label="Open menu"
-                class="chakra-button chakra-menu__trigger css-i4itm8"
+                class="chakra-button chakra-menu__trigger css-8e1hzq"
                 data-part="trigger"
                 data-scope="menu"
                 data-state="closed"
-                data-uid="«r0»"
+                data-uid="_r_0_"
                 dir="ltr"
-                id="menu:«r0»:trigger"
+                id="menu:_r_0_:trigger"
                 type="button"
               >
                 <svg
@@ -133,12 +133,12 @@ describe("Nav Component", () => {
               aria-expanded="false"
               aria-haspopup="dialog"
               aria-label="Open mobile menu"
-              class="chakra-button chakra-drawer__trigger css-s214k3"
+              class="chakra-button chakra-drawer__trigger css-1do5zui"
               data-part="trigger"
               data-scope="dialog"
               data-state="closed"
               dir="ltr"
-              id="dialog:«r1»:trigger"
+              id="dialog:_r_1_:trigger"
               type="button"
             >
               <svg
@@ -176,12 +176,12 @@ describe("LanguageSelect Component", () => {
           ((e,i,s,u,m,a,l,h)=&gt;{let d=document.documentElement,w=["light","dark"];function p(n){(Array.isArray(e)?e:[e]).forEach(y=&gt;{let k=y==="class",S=k&&a?m.map(f=&gt;a[f]||f):m;k?(d.classList.remove(...S),d.classList.add(a&&a[n]?a[n]:n)):d.setAttribute(y,n)}),R(n)}function R(n){h&&w.includes(n)&&(d.style.colorScheme=n)}function c(){return window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}if(u)p(u);else try{let n=localStorage.getItem(i)||s,y=l&&n==="system"?c():n;p(y)}catch(n){}})("class","theme","system",null,["light","dark"],null,true,true)
         </script>
         <div
-          class="_langAccordion_66c2c5 chakra-accordion__root css-ytxxjc"
+          class="_langAccordion_556229 chakra-accordion__root css-ytxxjc"
           data-orientation="vertical"
           data-part="root"
           data-scope="accordion"
           dir="ltr"
-          id="accordion:«r2»"
+          id="accordion:_r_2_"
         >
           <div
             class="chakra-accordion__item css-1jiccns"
@@ -190,20 +190,20 @@ describe("LanguageSelect Component", () => {
             data-scope="accordion"
             data-state="closed"
             dir="ltr"
-            id="collapsible:accordion:«r2»:item:language-select"
+            id="collapsible:accordion:_r_2_:item:language-select"
           >
             <button
-              aria-controls="accordion:«r2»:content:language-select"
+              aria-controls="accordion:_r_2_:content:language-select"
               aria-disabled="false"
               aria-expanded="false"
               class="chakra-accordion__itemTrigger css-j4wfrq"
               data-orientation="vertical"
-              data-ownedby="accordion:«r2»"
+              data-ownedby="accordion:_r_2_"
               data-part="item-trigger"
               data-scope="accordion"
               data-state="closed"
               dir="ltr"
-              id="accordion:«r2»:trigger:language-select"
+              id="accordion:_r_2_:trigger:language-select"
               type="button"
             >
               <span
@@ -231,7 +231,7 @@ describe("LanguageSelect Component", () => {
               </div>
             </button>
             <div
-              aria-labelledby="accordion:«r2»:trigger:language-select"
+              aria-labelledby="accordion:_r_2_:trigger:language-select"
               class="chakra-accordion__itemContent css-sl7aw8"
               data-collapsible=""
               data-orientation="vertical"
@@ -240,19 +240,19 @@ describe("LanguageSelect Component", () => {
               data-state="closed"
               dir="ltr"
               hidden=""
-              id="accordion:«r2»:content:language-select"
+              id="accordion:_r_2_:content:language-select"
               role="region"
               style="--height: 0px; --width: 0px;"
             >
               <div
-                aria-labelledby="radio-group:«r4»:label"
+                aria-labelledby="radio-group:_r_4_:label"
                 aria-orientation="vertical"
-                class="chakra-radio-group__root css-0"
+                class="chakra-radio-group__root"
                 data-orientation="vertical"
                 data-part="root"
                 data-scope="radio-group"
                 dir="ltr"
-                id="radio-group:«r4»"
+                id="radio-group:_r_4_"
                 role="radiogroup"
                 style="position: relative;"
               >
@@ -267,14 +267,14 @@ describe("LanguageSelect Component", () => {
                     data-ssr=""
                     data-state="checked"
                     dir="ltr"
-                    for="radio-group:«r4»:radio:input:en"
-                    id="radio-group:«r4»:radio:en"
+                    for="radio-group:_r_4_:radio:input:en"
+                    id="radio-group:_r_4_:radio:en"
                   >
                     <input
                       checked=""
-                      data-ownedby="radio-group:«r4»"
-                      id="radio-group:«r4»:radio:input:en"
-                      name="«r4»"
+                      data-ownedby="radio-group:_r_4_"
+                      id="radio-group:_r_4_:radio:input:en"
+                      name="_r_4_"
                       style="border: 0px; height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap; word-wrap: normal;"
                       type="radio"
                       value="en"
@@ -289,21 +289,21 @@ describe("LanguageSelect Component", () => {
                       data-ssr=""
                       data-state="checked"
                       dir="ltr"
-                      id="radio-group:«r4»:radio:control:en"
+                      id="radio-group:_r_4_:radio:control:en"
                     >
                       <span
                         class="dot"
                       />
                     </span>
                     <span
-                      class="chakra-radio-group__itemText css-0"
+                      class="chakra-radio-group__itemText"
                       data-orientation="vertical"
                       data-part="item-text"
                       data-scope="radio-group"
                       data-ssr=""
                       data-state="checked"
                       dir="ltr"
-                      id="radio-group:«r4»:radio:label:en"
+                      id="radio-group:_r_4_:radio:label:en"
                     >
                       languageEn
                     </span>
@@ -316,13 +316,13 @@ describe("LanguageSelect Component", () => {
                     data-ssr=""
                     data-state="unchecked"
                     dir="ltr"
-                    for="radio-group:«r4»:radio:input:es"
-                    id="radio-group:«r4»:radio:es"
+                    for="radio-group:_r_4_:radio:input:es"
+                    id="radio-group:_r_4_:radio:es"
                   >
                     <input
-                      data-ownedby="radio-group:«r4»"
-                      id="radio-group:«r4»:radio:input:es"
-                      name="«r4»"
+                      data-ownedby="radio-group:_r_4_"
+                      id="radio-group:_r_4_:radio:input:es"
+                      name="_r_4_"
                       style="border: 0px; height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap; word-wrap: normal;"
                       type="radio"
                       value="es"
@@ -336,17 +336,17 @@ describe("LanguageSelect Component", () => {
                       data-ssr=""
                       data-state="unchecked"
                       dir="ltr"
-                      id="radio-group:«r4»:radio:control:es"
+                      id="radio-group:_r_4_:radio:control:es"
                     />
                     <span
-                      class="chakra-radio-group__itemText css-0"
+                      class="chakra-radio-group__itemText"
                       data-orientation="vertical"
                       data-part="item-text"
                       data-scope="radio-group"
                       data-ssr=""
                       data-state="unchecked"
                       dir="ltr"
-                      id="radio-group:«r4»:radio:label:es"
+                      id="radio-group:_r_4_:radio:label:es"
                     >
                       languageEs
                     </span>
@@ -359,13 +359,13 @@ describe("LanguageSelect Component", () => {
                     data-ssr=""
                     data-state="unchecked"
                     dir="ltr"
-                    for="radio-group:«r4»:radio:input:fr"
-                    id="radio-group:«r4»:radio:fr"
+                    for="radio-group:_r_4_:radio:input:fr"
+                    id="radio-group:_r_4_:radio:fr"
                   >
                     <input
-                      data-ownedby="radio-group:«r4»"
-                      id="radio-group:«r4»:radio:input:fr"
-                      name="«r4»"
+                      data-ownedby="radio-group:_r_4_"
+                      id="radio-group:_r_4_:radio:input:fr"
+                      name="_r_4_"
                       style="border: 0px; height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap; word-wrap: normal;"
                       type="radio"
                       value="fr"
@@ -379,17 +379,17 @@ describe("LanguageSelect Component", () => {
                       data-ssr=""
                       data-state="unchecked"
                       dir="ltr"
-                      id="radio-group:«r4»:radio:control:fr"
+                      id="radio-group:_r_4_:radio:control:fr"
                     />
                     <span
-                      class="chakra-radio-group__itemText css-0"
+                      class="chakra-radio-group__itemText"
                       data-orientation="vertical"
                       data-part="item-text"
                       data-scope="radio-group"
                       data-ssr=""
                       data-state="unchecked"
                       dir="ltr"
-                      id="radio-group:«r4»:radio:label:fr"
+                      id="radio-group:_r_4_:radio:label:fr"
                     >
                       languageFr
                     </span>
