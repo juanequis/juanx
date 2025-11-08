@@ -3,6 +3,7 @@ export const weatherResolvers = {
     hello: () => "Hello from GraphQL!",
     weather: async (_: unknown, { latitude, longitude }: { latitude: number; longitude: number }) => {
       const apiKey = process.env.WEATHER_API_KEY;
+      
       if (!apiKey) throw new Error("API key is not defined");
 
       const response = await fetch(
