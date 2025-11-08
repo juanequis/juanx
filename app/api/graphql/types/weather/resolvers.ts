@@ -1,15 +1,28 @@
+import { GraphQLError } from "graphql";
+
 export const weatherResolvers = {
   Query: {
     hello: () => "Hello from GraphQL!",
     weather: async (_: unknown, { latitude, longitude }: { latitude: number; longitude: number }) => {
       const apiKey = process.env.WEATHER_API_KEY;
-      if (!apiKey) throw new Error("API key is not defined");
+      let response;
 
-      const response = await fetch(
-        `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${latitude},${longitude}`
-      );
+      if (!apiKey) throw new GraphQLError("WEATHER_API_KEY key is not defined");
 
-      if (!response.ok) throw new Error("Failed to fetch weather data");
+      try {
+        response = await fetch(
+          `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${latitude},${longitude}`
+        );
+
+        if (!response.ok) {
+          throw new Error("Failed to fetch weather data");
+        }
+      } catch (error) {
+
+        const errorMessage = error instanceof Error ? error.message : "An unknown error occurred";
+        
+        throw new GraphQLError(`Error fetching weather data: ${errorMessage}`);
+      }
 
       const data = await response.json();
 
