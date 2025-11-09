@@ -35,10 +35,19 @@ export default async function RootLayout({
     <html lang={locale}>
       <head>
         <Script
+          id="Cookiebot" 
+          src="https://consent.cookiebot.com/uc.js" 
+          data-cbid="846030bd-6177-40d0-9a37-47be977a1ae6" 
+          data-blockingmode="auto" 
+          type="text/javascript"
+          strategy="lazyOnload"
+        />
+        <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-9M7VTY6DJL"
+          strategy="lazyOnload"
         />
-        <Script id="google-analytics">
+        <Script id="google-analytics" strategy="lazyOnload">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
