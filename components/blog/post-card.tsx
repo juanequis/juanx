@@ -28,7 +28,7 @@ export function PostCard({
       padding={{ base: 6, md: 8 }}
       bg="var(--gray-alpha-100)"
     >
-      <Stack spacing={5}>
+      <Stack >
         {featuredLabel ? (
           <Text
             fontSize="sm"
@@ -39,13 +39,13 @@ export function PostCard({
             {featuredLabel}
           </Text>
         ) : null}
-        <Stack spacing={3}>
+        <Stack >
           <Heading size="lg">{post.title}</Heading>
           <Text color="gray.500">
             {post.publishedDisplay} · {readingTimeLabel}
           </Text>
           <Text fontStyle="italic">{post.summary}</Text>
-          <HStack spacing={2} flexWrap="wrap" data-testid="post-tags">
+          <HStack  flexWrap="wrap" data-testid="post-tags">
             {post.tags.map((tag) => (
               <Badge key={tag} colorScheme="gray" variant="subtle">
                 {tag}
@@ -54,7 +54,7 @@ export function PostCard({
           </HStack>
         </Stack>
         <Separator />
-        <Stack spacing={4}>
+        <Stack >
           {post.content.map((paragraph, index) => (
             <Text lineHeight="tall" key={`${post.slug}-paragraph-${index}`}>
               {paragraph}
