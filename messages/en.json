@@ -5,6 +5,7 @@
     "about": "About",
     "work": "Work",
     "contact": "Contact",
+    "blog": "Blog",
     "language": "Language",
     "languageEn": "English",
     "languageEs": "Spanish",
@@ -24,5 +25,14 @@
     "title": "👷 My Work Experience",
     "description": "Throughout my career, I’ve worked across companies of different sizes — from early-stage startups to large enterprises — helping teams bring web applications to life. Most recently, I led the frontend for a sustainability-focused startup, designing and shipping a full-featured SPA from scratch. Before that, I spent several years at Split Software, where I helped scale their feature flagging platform and refine frontend best practices.",
     "downloadCv": "Download my CV"
+  },
+  "blog": {
+    "title": "✍️ Writing about building for the web",
+    "description": "Long-form notes on the tooling, experiments, and lessons that shape my work. Expect build logs, engineering deep dives, and reflections on product teams.",
+    "sectionHeading": "Latest entry",
+    "featuredLabel": "Featured entry",
+    "readingTime": "{minutes} min read",
+    "commentsPlannedTitle": "Comments are on the roadmap",
+    "commentsPlannedBody": "I’m designing a lightweight moderation flow before opening comments publicly. For now, feel free to reach out via LinkedIn or GitHub."
   }
 }
