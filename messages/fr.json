@@ -4,6 +4,7 @@
     "home": "Accueil",
     "about": "À propos",
     "work": "Travail",
+    "blog": "Blog",
     "contact": "Contact",
     "language": "Langue",
     "languageEn": "Anglais",
@@ -24,5 +25,14 @@
     "title": "👷 Mon Expérience Professionnelle",
     "description": "Au cours de ma carrière, j'ai travaillé dans des entreprises de différentes tailles — des startups en phase de démarrage aux grandes entreprises — en aidant les équipes à donner vie à des applications web. Plus récemment, j'ai dirigé le développement frontend pour une startup axée sur la durabilité, en concevant et en livrant une SPA complète à partir de zéro. Avant cela, j'ai passé plusieurs années chez Split Software, où j'ai contribué à l'évolution de leur plateforme de feature flagging et à l'amélioration des meilleures pratiques frontend.",
     "downloadCv": "Télécharger mon CV"
+  },
+  "blog": {
+    "title": "✍️ J'écris sur la création pour le web",
+    "description": "Des notes longues sur les outils, les expériences et les leçons qui influencent mon travail. Attendez-vous à des carnets de construction, des plongées techniques et des réflexions sur les équipes produit.",
+    "sectionHeading": "Dernier article",
+    "featuredLabel": "Article mis en avant",
+    "readingTime": "{minutes} min de lecture",
+    "commentsPlannedTitle": "Les commentaires arrivent bientôt",
+    "commentsPlannedBody": "Je veux mettre en place une modération légère avant d'ouvrir les commentaires. En attendant, écrivez-moi sur LinkedIn ou GitHub."
   }
 }

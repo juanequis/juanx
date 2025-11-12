@@ -4,6 +4,7 @@
     "home": "Inicio",
     "about": "Acerca de",
     "work": "Trabajo",
+    "blog": "Blog",
     "contact": "Contacto",
     "language": "Idioma",
     "languageEn": "Inglés",
@@ -24,5 +25,14 @@
     "title": "👷 Mi Experiencia Laboral",
     "description": "Durante mi carrera, trabajé en empresas de diferentes tamaños, desde startups en sus inicios como en una software factory con clientes internacionales, ayudando a los equipos a implementar aplicaciones web. Más recientemente, lideré el desarrollo de una cliente web para una startup enfocada en la sostenibilidad, diseñando y lanzando una SPA completa desde cero. Antes de eso, pasé varios años en Split Software, donde ayudé a desarrollar su plataforma de feature flagging y a mejorar los procesos de frontend.",
     "downloadCv": "Descargar mi CV"
+  },
+  "blog": {
+    "title": "✍️ Escribiendo sobre crear para la web",
+    "description": "Notas en formato largo sobre las herramientas, experimentos y aprendizajes que influyen en mi trabajo diario. Habrá bitácoras de construcción, detalles técnicos y reflexiones sobre equipos de producto.",
+    "sectionHeading": "Última entrada",
+    "featuredLabel": "Entrada destacada",
+    "readingTime": "{minutes} min de lectura",
+    "commentsPlannedTitle": "Los comentarios llegarán pronto",
+    "commentsPlannedBody": "Antes de habilitarlos quiero definir bien la moderación. Mientras tanto, podemos conversar por LinkedIn o GitHub."
   }
 }

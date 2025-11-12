@@ -85,8 +85,8 @@ export function Nav() {
           {t('work')}
         </Link>
         {/* <Link
-          href="/contact">
-          {t('contact')}
+          href="/blog">
+          {t('blog')}
         </Link> */}
       </Flex>
       <Flex alignItems="center">
@@ -163,8 +163,8 @@ export function Nav() {
                       {t('work')}
                     </Link>
                     {/* <Link
-                      href="/contact">
-                      {t('contact')}
+                      href="/blog">
+                      {t('blog')}
                     </Link> */}
                     <Separator />
                     <ColorModeSwitch label={t('toggleColorMode')} />
