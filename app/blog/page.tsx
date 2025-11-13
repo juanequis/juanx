@@ -26,7 +26,7 @@ export default function Blog() {
           <Heading id="blog-posts-heading" size="lg" mb={6}>
             {t("sectionHeading")}
           </Heading>
-          <Stack spacing={8}>
+          <Stack >
             {blogPosts.map((post, index) => (
               <PostCard
                 key={post.slug}
