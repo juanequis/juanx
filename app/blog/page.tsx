@@ -3,7 +3,7 @@ import { Heading, Stack, Text } from "@chakra-ui/react";
 import { MotionBox } from "../_components/motion";
 import { useTranslations } from "next-intl";
 import { blogPosts } from "@/content/blog/posts";
-import { PostCard } from "@/components/blog/post-card";
+import { PostCard } from "@/app/blog/components/post-card";
 
 export default function Blog() {
   const t = useTranslations("blog");
