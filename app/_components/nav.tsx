@@ -1,16 +1,16 @@
 "use client"
 
-import { useTransition } from 'react';
-import styles from './nav.module.css';
+import { ColorModeSwitch } from '@/components/ui/color-mode';
 import { Link } from '@/components/ui/link';
-import { HiOutlineCog } from "react-icons/hi";
-import { Menu, Portal, IconButton, Flex, Drawer, CloseButton, Separator, Accordion, Span, RadioGroup, VStack } from "@chakra-ui/react"
-import { ColorModeSwitch } from '@/components/ui/color-mode'
-import { RxHamburgerMenu } from "react-icons/rx";
-import { useTranslations, useLocale } from 'next-intl';
 import { setUserLocale } from '@/i18n/locale';
 import type { Locale } from '@/i18n/settings';
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { Accordion, CloseButton, Drawer, Flex, IconButton, Menu, Portal, RadioGroup, Separator, Span, VStack } from "@chakra-ui/react";
+import { useLocale, useTranslations } from 'next-intl';
+import { useTransition } from 'react';
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { HiOutlineCog } from "react-icons/hi";
+import { RxHamburgerMenu } from "react-icons/rx";
+import styles from './nav.module.css';
 
 export const LanguageSelect = () => {
   const t = useTranslations('nav');
@@ -84,10 +84,10 @@ export function Nav() {
           href="/work">
           {t('work')}
         </Link>
-        {/* <Link
+        <Link
           href="/blog">
           {t('blog')}
-        </Link> */}
+        </Link>
       </Flex>
       <Flex alignItems="center">
         <Flex className={styles.navSocial}>
@@ -162,10 +162,10 @@ export function Nav() {
                       href="/work">
                       {t('work')}
                     </Link>
-                    {/* <Link
+                    <Link
                       href="/blog">
                       {t('blog')}
-                    </Link> */}
+                    </Link>
                     <Separator />
                     <ColorModeSwitch label={t('toggleColorMode')} />
                     <LanguageSelect />
