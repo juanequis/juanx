@@ -28,7 +28,7 @@
   },
   "blog": {
     "title": "✍️ Escribiendo sobre crear para la web",
-    "description": "Notas en formato largo sobre las herramientas, experimentos y aprendizajes que influyen en mi trabajo diario. Habrá bitácoras de construcción, detalles técnicos y reflexiones sobre equipos de producto.",
+    "description": "Notas sobre las herramientas, experimentos y aprendizajes que influyen en mi trabajo diario.",
     "sectionHeading": "Última entrada",
     "featuredLabel": "Entrada destacada",
     "readingTime": "{minutes} min de lectura",

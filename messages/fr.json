@@ -28,7 +28,7 @@
   },
   "blog": {
     "title": "✍️ J'écris sur la création pour le web",
-    "description": "Des notes longues sur les outils, les expériences et les leçons qui influencent mon travail. Attendez-vous à des carnets de construction, des plongées techniques et des réflexions sur les équipes produit.",
+    "description": "Des notes sur les outils, les expériences et les leçons qui influencent mon travail.",
     "sectionHeading": "Dernier article",
     "featuredLabel": "Article mis en avant",
     "readingTime": "{minutes} min de lecture",

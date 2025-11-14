@@ -42,8 +42,7 @@ describe("PostCard", () => {
           class="css-1vyu3xl"
         >
           <div
-            class="chakra-stack css-8g8ihq"
-            spacing="5"
+            class="chakra-stack css-fybcnu"
           >
             <p
               class="css-1mhr1sh"
@@ -51,21 +50,24 @@ describe("PostCard", () => {
               Featured
             </p>
             <div
-              class="chakra-stack css-8g8ihq"
-              spacing="3"
+              class="chakra-stack css-16p2oxl"
             >
-              <h2
-                class="chakra-heading css-1868jki"
+              <div
+                class="chakra-stack css-1y3f6ad"
               >
-                Test Title
-              </h2>
-              <p
-                class="css-q9k0mw"
-              >
-                January 1, 2025
-                 · 
-                5 min read
-              </p>
+                <h2
+                  class="chakra-heading css-1868jki"
+                >
+                  Test Title
+                </h2>
+                <p
+                  class="css-q9k0mw"
+                >
+                  January 1, 2025
+                   · 
+                  5 min read
+                </p>
+              </div>
               <p
                 class="css-1msjh1x"
               >
@@ -74,7 +76,6 @@ describe("PostCard", () => {
               <div
                 class="chakra-stack css-zztjb4"
                 data-testid="post-tags"
-                spacing="2"
               >
                 <span
                   class="chakra-badge css-19fz2s4"
@@ -94,8 +95,7 @@ describe("PostCard", () => {
               role="separator"
             />
             <div
-              class="chakra-stack css-8g8ihq"
-              spacing="4"
+              class="chakra-stack css-16p2oxl"
             >
               <p
                 class="css-uqtz4d"
@@ -106,6 +106,11 @@ describe("PostCard", () => {
                 class="css-uqtz4d"
               >
                 Paragraph two continuing the explanation.
+              </p>
+              <p
+                class="css-g82np5"
+              >
+                JC.
               </p>
             </div>
             <div

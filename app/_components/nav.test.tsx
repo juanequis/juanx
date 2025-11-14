@@ -39,6 +39,12 @@ describe("Nav Component", () => {
             >
               work
             </a>
+            <a
+              class="chakra-link _link_99cf69 css-2yvnes"
+              href="/blog"
+            >
+              blog
+            </a>
           </div>
           <div
             class="css-70qvj9"
