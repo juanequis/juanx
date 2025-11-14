@@ -28,7 +28,7 @@
   },
   "blog": {
     "title": "✍️ Writing about building for the web",
-    "description": "Long-form notes on the tooling, experiments, and lessons that shape my work. Expect build logs, engineering deep dives, and reflections on product teams.",
+    "description": "Notes on the tooling, experiments, and lessons that shape my work.",
     "sectionHeading": "Latest entry",
     "featuredLabel": "Featured entry",
     "readingTime": "{minutes} min read",

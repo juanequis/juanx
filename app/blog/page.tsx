@@ -10,7 +10,7 @@ export default function Blog() {
 
   return (
     <div className={styles.page}>
-      <main className={`${styles.main} max-w-300`}>
+      <main className={`${styles.main} max-w-250`}>
         <MotionBox
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
@@ -26,17 +26,16 @@ export default function Blog() {
               {t("sectionHeading")}
             </Heading>
             <Stack>
-              {blogPosts.map((post, index) => (
+              {blogPosts.map((post) => (
                 <PostCard
                   key={post.slug}
                   post={post}
-                  featuredLabel={index === 0 ? t("featuredLabel") : undefined}
                   readingTimeLabel={t("readingTime", {
                     minutes: post.readingTimeMinutes,
                   })}
                   commentsTitle={t("commentsPlannedTitle")}
                   commentsBody={t("commentsPlannedBody")}
-                  showCommentsNotice={!post.commentsEnabled}
+                  showCommentsNotice={post.commentsEnabled}
                 />
               ))}
             </Stack>

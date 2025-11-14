@@ -1,7 +1,15 @@
-"use client"
+"use client";
 
 import type { BlogPost } from "@/content/blog/posts";
-import { Badge, Box, Heading, HStack, Separator, Stack, Text } from "@chakra-ui/react";
+import {
+  Badge,
+  Box,
+  Heading,
+  HStack,
+  Separator,
+  Stack,
+  Text,
+} from "@chakra-ui/react";
 
 type PostCardProps = {
   post: BlogPost;
@@ -28,7 +36,7 @@ export function PostCard({
       padding={{ base: 6, md: 8 }}
       bg="var(--gray-alpha-100)"
     >
-      <Stack >
+      <Stack gap="5">
         {featuredLabel ? (
           <Text
             fontSize="sm"
@@ -39,13 +47,16 @@ export function PostCard({
             {featuredLabel}
           </Text>
         ) : null}
-        <Stack >
-          <Heading size="lg">{post.title}</Heading>
-          <Text color="gray.500">
-            {post.publishedDisplay} · {readingTimeLabel}
-          </Text>
+        <Stack gap="3">
+          <HStack justifyContent="space-between">
+            <Heading size="lg">{post.title}</Heading>
+            <Text color="gray.500">
+              {post.publishedDisplay} · {readingTimeLabel}
+            </Text>
+          </HStack>
+
           <Text fontStyle="italic">{post.summary}</Text>
-          <HStack  flexWrap="wrap" data-testid="post-tags">
+          <HStack flexWrap="wrap" data-testid="post-tags">
             {post.tags.map((tag) => (
               <Badge key={tag} colorScheme="gray" variant="subtle">
                 {tag}
@@ -54,12 +65,16 @@ export function PostCard({
           </HStack>
         </Stack>
         <Separator />
-        <Stack >
+        <Stack gap="3">
           {post.content.map((paragraph, index) => (
             <Text lineHeight="tall" key={`${post.slug}-paragraph-${index}`}>
               {paragraph}
             </Text>
           ))}
+
+          <Text fontWeight="bold" textStyle="lg" alignSelf="flex-end">
+            JC.
+          </Text>
         </Stack>
         {showCommentsNotice ? (
           <Box
