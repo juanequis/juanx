@@ -10,6 +10,7 @@ import {
   Stack,
   Text,
 } from "@chakra-ui/react";
+import styles from "./post-card.module.css";
 
 type PostCardProps = {
   post: BlogPost;
@@ -47,8 +48,11 @@ export function PostCard({
             {featuredLabel}
           </Text>
         ) : null}
-        <Stack gap="3">
-          <HStack justifyContent="space-between">
+        <Stack gap="3" className={styles.postHeader}>
+          <HStack
+            justifyContent="space-between"
+            className={styles.postHeaderStack}
+          >
             <Heading size="lg">{post.title}</Heading>
             <Text color="gray.500">
               {post.publishedDisplay} · {readingTimeLabel}

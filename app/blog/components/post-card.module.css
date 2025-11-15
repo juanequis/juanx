@@ -1,0 +1,19 @@
+/** Playing around a bit with css container queries */
+
+.postHeader {
+  container-type: inline-size;
+}
+
+@container (max-width: 500px) {
+  .postHeaderStack {
+    flex-direction: column;
+  }
+
+  :global(p) {
+    text-align: center;
+  }
+
+  :global(.chakra-stack) {
+    justify-content: center;
+  }
+}
