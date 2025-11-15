@@ -1,11 +1,12 @@
 import { render } from "@/test-utils/render";
 import { describe, it, expect, vi, beforeEach } from "vitest";
+import type { ReactNode } from "react";
 import { ColorModeProvider, useColorMode, useColorModeValue, ColorModeIcon, ColorModeButton, ColorModeSwitch, LightMode, DarkMode } from "./color-mode";
 
 const mockedSetTheme = vi.fn();
 
 vi.mock("next-themes", () => ({
-  ThemeProvider: ({ children }) => <>{children}</>,
+  ThemeProvider: ({ children }: { children: ReactNode }) => <>{children}</>,
   useTheme: () => ({
     resolvedTheme: "light",
     setTheme: mockedSetTheme,
