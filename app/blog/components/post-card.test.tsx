@@ -50,10 +50,10 @@ describe("PostCard", () => {
               Featured
             </p>
             <div
-              class="chakra-stack css-16p2oxl"
+              class="chakra-stack _postHeader_d5e635 css-16p2oxl"
             >
               <div
-                class="chakra-stack css-1y3f6ad"
+                class="chakra-stack _postHeaderStack_d5e635 css-1y3f6ad"
               >
                 <h2
                   class="chakra-heading css-1868jki"

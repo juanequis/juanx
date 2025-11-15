@@ -1,0 +1,19 @@
+/* Playing a round with css container queries, the !important rules are set to avoid emotion rules to override the containers*/
+
+.postHeader {
+  container-type: inline-size;
+}
+
+@container (max-width: 500px) {
+  .postHeaderStack {
+    flex-direction: column !important;
+  }
+
+  .postHeading {
+    text-align: center !important;
+  }
+
+  .badgeStack {
+    justify-content: center !important;
+  }
+}
