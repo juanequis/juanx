@@ -1,4 +1,4 @@
-/** Playing around a bit with css container queries */
+/* Playing a round with css container queries, the !important rules are set to avoid emotion rules to override the containers*/
 
 .postHeader {
   container-type: inline-size;
@@ -6,14 +6,14 @@
 
 @container (max-width: 500px) {
   .postHeaderStack {
-    flex-direction: column;
+    flex-direction: column !important;
   }
 
-  :global(p) {
-    text-align: center;
+  .postHeading {
+    text-align: center !important;
   }
 
-  :global(.chakra-stack) {
-    justify-content: center;
+  .badgeStack {
+    justify-content: center !important;
   }
 }

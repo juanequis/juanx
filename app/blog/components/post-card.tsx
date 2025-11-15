@@ -53,14 +53,20 @@ export function PostCard({
             justifyContent="space-between"
             className={styles.postHeaderStack}
           >
-            <Heading size="lg">{post.title}</Heading>
+            <Heading size="lg" className={styles.postHeading}>
+              {post.title}
+            </Heading>
             <Text color="gray.500">
               {post.publishedDisplay} · {readingTimeLabel}
             </Text>
           </HStack>
 
           <Text fontStyle="italic">{post.summary}</Text>
-          <HStack flexWrap="wrap" data-testid="post-tags">
+          <HStack
+            flexWrap="wrap"
+            data-testid="post-tags"
+            className={styles.badgeStack}
+          >
             {post.tags.map((tag) => (
               <Badge key={tag} colorScheme="gray" variant="subtle">
                 {tag}
