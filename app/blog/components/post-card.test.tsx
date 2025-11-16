@@ -56,7 +56,7 @@ describe("PostCard", () => {
                 class="chakra-stack _postHeaderStack_d5e635 css-1y3f6ad"
               >
                 <h2
-                  class="chakra-heading css-1868jki"
+                  class="chakra-heading _centeredText_d5e635 css-1868jki"
                 >
                   Test Title
                 </h2>
@@ -69,12 +69,12 @@ describe("PostCard", () => {
                 </p>
               </div>
               <p
-                class="css-1msjh1x"
+                class="_centeredText_d5e635 css-1msjh1x"
               >
                 This is a summary of the blog post.
               </p>
               <div
-                class="chakra-stack css-zztjb4"
+                class="chakra-stack _badgeStack_d5e635 css-zztjb4"
                 data-testid="post-tags"
               >
                 <span
