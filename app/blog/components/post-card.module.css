@@ -9,7 +9,11 @@
     flex-direction: column !important;
   }
 
+<<<<<<< Updated upstream
   .postHeading {
+=======
+  .centeredText {
+>>>>>>> Stashed changes
     text-align: center !important;
   }
 

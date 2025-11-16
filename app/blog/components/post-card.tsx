@@ -53,7 +53,11 @@ export function PostCard({
             justifyContent="space-between"
             className={styles.postHeaderStack}
           >
+<<<<<<< Updated upstream
             <Heading size="lg" className={styles.postHeading}>
+=======
+            <Heading size="lg" className={styles.centeredText}>
+>>>>>>> Stashed changes
               {post.title}
             </Heading>
             <Text color="gray.500">
@@ -61,7 +65,13 @@ export function PostCard({
             </Text>
           </HStack>
 
+<<<<<<< Updated upstream
           <Text fontStyle="italic">{post.summary}</Text>
+=======
+          <Text fontStyle="italic" className={styles.centeredText}>
+            {post.summary}
+          </Text>
+>>>>>>> Stashed changes
           <HStack
             flexWrap="wrap"
             data-testid="post-tags"
