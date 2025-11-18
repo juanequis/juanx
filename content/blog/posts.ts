@@ -8,6 +8,7 @@ export type BlogPost = {
   tags: string[];
   content: string[];
   commentsEnabled: boolean;
+  number: number;
 };
 
 export const blogPosts: BlogPost[] = [
@@ -26,5 +27,6 @@ export const blogPosts: BlogPost[] = [
       "If you’re reading this: thanks for being here. I hope you get something out of it, even if it’s just a new idea, a fresh perspective, or a reminder that we’re all figuring things out as we go.",
     ],
     commentsEnabled: false,
+    number: 0,
   },
 ];

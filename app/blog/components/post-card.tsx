@@ -54,7 +54,7 @@ export function PostCard({
             className={styles.postHeaderStack}
           >
             <Heading size="lg" className={styles.centeredText}>
-              {post.title}
+              #{post.number} - {post.title}
             </Heading>
             <Text color="gray.500">
               {post.publishedDisplay} · {readingTimeLabel}
