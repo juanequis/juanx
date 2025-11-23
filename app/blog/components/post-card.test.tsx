@@ -58,6 +58,8 @@ describe("PostCard", () => {
                 <h2
                   class="chakra-heading _centeredText_d5e635 css-1868jki"
                 >
+                  #
+                   - 
                   Test Title
                 </h2>
                 <p
