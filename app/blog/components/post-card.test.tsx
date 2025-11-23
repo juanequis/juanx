@@ -11,6 +11,7 @@ const mockPost: BlogPost = {
   publishedDisplay: "January 1, 2025",
   readingTimeMinutes: 5,
   tags: ["Next.js", "Testing"],
+  number: 0,
   content: [
     "Paragraph one explaining what is going on.",
     "Paragraph two continuing the explanation.",
